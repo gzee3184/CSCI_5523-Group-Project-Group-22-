@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="ipums-ddi-xslt.xsl"?>
-<codeBook ID="ddi2-c5966950-8040-013e-056e-02420a1c0304-highered_00003.dat-highered.ipums.org" version="2.5" xmlns="ddi:codebook:2_5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="ddi:codebook:2_5 http://www.ddialliance.org/Specification/DDI-Codebook/2.5/XMLSchema/codebook.xsd">
+<codeBook ID="ddi2-c5966950-8040-013e-056e-02420a1c0304-highered_00004.dat-highered.ipums.org" version="2.5" xmlns="ddi:codebook:2_5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="ddi:codebook:2_5 http://www.ddialliance.org/Specification/DDI-Codebook/2.5/XMLSchema/codebook.xsd">
   <docDscr>
     <citation>
       <titlStmt>
         <titl>Codebook for an Higher Ed Data Extract</titl>
-        <subTitl>DDI 2.5 metadata describing the extract file  'highered_00003.dat'</subTitl>
-        <IDNo>ddi2-c5966950-8040-013e-056e-02420a1c0304-highered_00003.dat-highered.ipums.org</IDNo>
+        <subTitl>DDI 2.5 metadata describing the extract file  'highered_00004.dat'</subTitl>
+        <IDNo>ddi2-c5966950-8040-013e-056e-02420a1c0304-highered_00004.dat-highered.ipums.org</IDNo>
       </titlStmt>
       <rspStmt>
         <AuthEnty affiliation="University of Minnesota">IPUMS</AuthEnty>
       </rspStmt>
       <prodStmt>
         <producer abbr="IPUMS" affiliation="University of Minnesota" role="Documentation">IPUMS</producer>
-        <prodDate date="2025-10-29">October 29, 2025</prodDate>
+        <prodDate date="2025-11-15">November 15, 2025</prodDate>
         <prodPlac>IPUMS, 50 Willey Hall, 225 - 19th Avenue South, Minneapolis, MN 55455</prodPlac>
       </prodStmt>
       <distStmt>
@@ -24,14 +24,14 @@
   <stdyDscr>
     <citation>
       <titlStmt>
-        <titl>User Extract highered_00003.dat</titl>
+        <titl>User Extract highered_00004.dat</titl>
       </titlStmt>
       <rspStmt>
         <AuthEnty affiliation="University of Minnesota">IPUMS</AuthEnty>
       </rspStmt>
       <prodStmt>
         <producer abbr="IPUMS" affiliation="University of Minnesota" role="Documentation">IPUMS</producer>
-        <prodDate date="2025-10-29">October 29, 2025</prodDate>
+        <prodDate date="2025-11-15">November 15, 2025</prodDate>
         <prodPlac>IPUMS, 50 Willey Hall, 225 - 19th Avenue South, Minneapolis, MN 55455</prodPlac>
       </prodStmt>
       <distStmt>
@@ -42,7 +42,7 @@
         <serInfo>DOI:10.18128/D100.V1.0</serInfo>
       </serStmt>
       <verStmt>
-        <version date="2025-10-29"/>
+        <version date="2025-11-15"/>
       </verStmt>
     </citation>
     <stdyInfo>
@@ -65,6 +65,7 @@
         <topcClas vocab="IPUMS">Work Activities Variables -- PERSON</topcClas>
         <topcClas vocab="IPUMS">Income Variables -- PERSON</topcClas>
         <topcClas vocab="IPUMS">Job Characteristics Variables -- PERSON</topcClas>
+        <topcClas vocab="IPUMS">Job Satisfaction Variables -- PERSON</topcClas>
         <topcClas vocab="IPUMS">Job Satisfaction Variables -- PERSON</topcClas>
         <topcClas vocab="IPUMS">Job Training Variables -- PERSON</topcClas>
         <topcClas vocab="IPUMS">Work History Variables -- PERSON</topcClas>
@@ -151,7 +152,7 @@ The licensing agreement for use of Higher Ed data requires that users supply us 
   </stdyDscr>
   <fileDscr ID="ExtractData">
     <fileTxt>
-      <fileName>highered_00003.dat</fileName>
+      <fileName>highered_00004.dat</fileName>
       <fileCont>Microdata records</fileCont>
       <fileStrc type="rectangular"/>
       <fileType charset="ISO-8859-1">ISO-8859-1 data file</fileType>
@@ -6640,8 +6641,27 @@ Users should note that another variable, ACOT, also indicates a reason not liste
   <concept vocab="IPUMS">Employer Characteristics Variables -- PERSON</concept>
   <varFormat schema="other" type="numeric"/>
 </var>
-<var ID="FSST" dcml="0" files="ExtractData" intrvl="discrete" name="FSST">
+<var ID="FSOT" dcml="0" files="ExtractData" intrvl="discrete" name="FSOT">
   <location EndPos="498" StartPos="497" width="2"/>
+  <labl>Federal agency supporting work: Other</labl>
+  <txt><![CDATA[FSOT reports whether or not the respondent's work was supported by a federal agency or department other than the ones listed on the questionnaire.  FSOT is part of a series of variables that indicate all federal departments and agencies that might have supported the respondent's work.]]></txt>
+  <catgry>
+    <catValu>00</catValu>
+    <labl>No</labl>
+  </catgry>
+  <catgry>
+    <catValu>01</catValu>
+    <labl>Yes</labl>
+  </catgry>
+  <catgry>
+    <catValu>98</catValu>
+    <labl>Logical Skip</labl>
+  </catgry>
+  <concept vocab="IPUMS">Employer Characteristics Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="FSST" dcml="0" files="ExtractData" intrvl="discrete" name="FSST">
+  <location EndPos="500" StartPos="499" width="2"/>
   <labl>Federal agency supporting work: State</labl>
   <txt><![CDATA[FSST reports whether or not the respondent's work was supported by the US State Department.  FSST is part of a series of variables that indicate all federal departments and agencies that might have supported the respondent's work.]]></txt>
   <catgry>
@@ -6660,7 +6680,7 @@ Users should note that another variable, ACOT, also indicates a reason not liste
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="FSVA" dcml="0" files="ExtractData" intrvl="discrete" name="FSVA">
-  <location EndPos="500" StartPos="499" width="2"/>
+  <location EndPos="502" StartPos="501" width="2"/>
   <labl>Federal agency supporting work: VA</labl>
   <txt><![CDATA[FSVA reports whether or not the respondent's work was supported by the US Department of Veteran Affairs.  FSVA is part of a series of variables that indicate all federal departments and agencies that might have supported the respondent's work.]]></txt>
   <catgry>
@@ -6679,7 +6699,7 @@ Users should note that another variable, ACOT, also indicates a reason not liste
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="WAPRI" dcml="0" files="ExtractData" intrvl="discrete" name="WAPRI">
-  <location EndPos="502" StartPos="501" width="2"/>
+  <location EndPos="504" StartPos="503" width="2"/>
   <labl>Most hours, work activity</labl>
   <txt><![CDATA[WAPRI categorizes the primary work activity the respondent performs during a typical work week in his/her principal job.  Related variables regarding work activities include WAPRSM, WASEC, and WASCSM.]]></txt>
   <catgry>
@@ -6746,7 +6766,7 @@ Users should note that another variable, ACOT, also indicates a reason not liste
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="WAPRSM" dcml="0" files="ExtractData" intrvl="discrete" name="WAPRSM">
-  <location EndPos="504" StartPos="503" width="2"/>
+  <location EndPos="506" StartPos="505" width="2"/>
   <labl>Summarized primary work activity</labl>
   <txt><![CDATA[WAPRSM identifies a summary-level version of the respondent's primary work activity during a typical work week in his/her principal job.  Related variables regarding work activities include WAPRI,  WASEC, and WASCSM.]]></txt>
   <catgry>
@@ -6777,7 +6797,7 @@ Users should note that another variable, ACOT, also indicates a reason not liste
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="WASEC" dcml="0" files="ExtractData" intrvl="discrete" name="WASEC">
-  <location EndPos="506" StartPos="505" width="2"/>
+  <location EndPos="508" StartPos="507" width="2"/>
   <labl>Second most hours, work activity</labl>
   <txt><![CDATA[WASEC categorizes the secondary work activity the respondent performs during a typical work week in his/her principal job.  Related variables regarding work activities include WAPRI, WAPRSM, and WASCSM.]]></txt>
   <catgry>
@@ -6848,7 +6868,7 @@ Users should note that another variable, ACOT, also indicates a reason not liste
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="WASCSM" dcml="0" files="ExtractData" intrvl="discrete" name="WASCSM">
-  <location EndPos="508" StartPos="507" width="2"/>
+  <location EndPos="510" StartPos="509" width="2"/>
   <labl>Summarized secondary work activity</labl>
   <txt><![CDATA[WASCSM identifies a summary-level version of the respondent's secondary work activity during a typical work week in his/her principal job.  Related variables regarding work activities include WAPRI, WASEC, and WAPRSM.]]></txt>
   <catgry>
@@ -6883,7 +6903,7 @@ Users should note that another variable, ACOT, also indicates a reason not liste
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="PRIAREA" dcml="0" files="ExtractData" intrvl="discrete" name="PRIAREA">
-  <location EndPos="510" StartPos="509" width="2"/>
+  <location EndPos="512" StartPos="511" width="2"/>
   <labl>Area devoted most hours</labl>
   <txt><![CDATA[PRIAREA describes the topic area where the respondent devoted most of his/her work hours.]]></txt>
   <catgry>
@@ -6922,7 +6942,7 @@ Users should note that another variable, ACOT, also indicates a reason not liste
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="ACTCAP" dcml="0" files="ExtractData" intrvl="discrete" name="ACTCAP">
-  <location EndPos="512" StartPos="511" width="2"/>
+  <location EndPos="514" StartPos="513" width="2"/>
   <labl>Activity, computer applications</labl>
   <txt><![CDATA[ACTCAP indicates whether the work activities in the respondent's primary job involves computer applications.  ACTCAP is derived from a question that lists a number of work activities, and the respondent is asked to check a box next to the work activity that occupied at least 10 percent of the respondent's time in a typical work week.  Related variables include ACTDED, ACTMGT, ACTRD, ACTRDT, ACTRES, and ACTTCH.
 
@@ -6943,7 +6963,7 @@ ACTCAP is an NSF recode using information from variables including WACOM.]]></tx
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="ACTDED" dcml="0" files="ExtractData" intrvl="discrete" name="ACTDED">
-  <location EndPos="514" StartPos="513" width="2"/>
+  <location EndPos="516" StartPos="515" width="2"/>
   <labl>Activity, development and design</labl>
   <txt><![CDATA[ACTDED indicates whether the work activities in the respondent's primary job involves development and design.  ACTDED is derived from a question that lists a number of work activities, and the respondent is asked to check a box next to the work activity that occupied at least 10 percent of the respondent's time in a typical work week.  Related variables include ACTCAP, ACTMGT, ACTRD, ACTRDT, ACTRES, and ACTTCH.
 
@@ -6964,7 +6984,7 @@ ACTDED is an NSF recode using information from variables including WADEV and WAD
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="ACTMGT" dcml="0" files="ExtractData" intrvl="discrete" name="ACTMGT">
-  <location EndPos="516" StartPos="515" width="2"/>
+  <location EndPos="518" StartPos="517" width="2"/>
   <labl>Activity, management/sales</labl>
   <txt><![CDATA[ACTMGT indicates whether the work activities in the respondent's primary job involves management and/or sales.  ACTMGT is derived from a question that lists a number of work activities, and the respondent is asked to check a box next to the work activity that occupied at least 10 percent of the respondent's time in a typical work week.  Related variables include ACTCAP, ACTDED, ACTRD, ACTRDT, ACTRES, and ACTTCH.
 
@@ -6985,7 +7005,7 @@ ACTMGT is an NSF recode using information from variables including WAMGMT and WA
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="ACTRD" dcml="0" files="ExtractData" intrvl="discrete" name="ACTRD">
-  <location EndPos="518" StartPos="517" width="2"/>
+  <location EndPos="520" StartPos="519" width="2"/>
   <labl>Activity, research and development</labl>
   <txt><![CDATA[ACTRD indicates whether the work activities in the respondent's primary job involves research and development.  ACTRD is derived from a question that lists a number of work activities, and the respondent is asked to check a box next to the work activity that occupied at least 10 percent of the respondent's time in a typical work week.  Related variables include ACTCAP, ACTDED, ACTMGT, ACTRDT, ACTRES, and ACTTCH.
 
@@ -7006,7 +7026,7 @@ ACTRD is an NSF recode using information from variables including WAAPRSH, WABRS
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="ACTRDT" dcml="0" files="ExtractData" intrvl="discrete" name="ACTRDT">
-  <location EndPos="520" StartPos="519" width="2"/>
+  <location EndPos="522" StartPos="521" width="2"/>
   <labl>Activity, research, development, and teaching</labl>
   <txt><![CDATA[ACTRDT indicates whether the work activities in the respondent's primary job involves research, development, and teaching.  ACTRDT is derived from a question that lists a number of work activities, and the respondent is asked to check a box next to the work activity that occupied at least 10 percent of the respondent's time in a typical work week.  Related variables include ACTCAP, ACTDED, ACTMGT, ACTRD, ACTRES, and ACTTCH.
 
@@ -7027,7 +7047,7 @@ ACTRDT is an NSF recode using information from variables including WAAPRSH, WABR
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="ACTRES" dcml="0" files="ExtractData" intrvl="discrete" name="ACTRES">
-  <location EndPos="522" StartPos="521" width="2"/>
+  <location EndPos="524" StartPos="523" width="2"/>
   <labl>Activity, research (basic and/or applied)</labl>
   <txt><![CDATA[ACTRES indicates whether the work activities in the respondent's primary job involves basic and/or applied research.  ACTRES is derived from a question that lists a number of work activities, and the respondent is asked to check a box next to the work activity that occupied at least 10 percent of the respondent's time in a typical work week.  Related variables include ACTCAP, ACTDED, ACTMGT, ACTRD, ACTRDT, and ACTTCH.
 
@@ -7048,7 +7068,7 @@ ACTRES is an NSF recode using information from variables including WAAPRSH and W
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="ACTTCH" dcml="0" files="ExtractData" intrvl="discrete" name="ACTTCH">
-  <location EndPos="524" StartPos="523" width="2"/>
+  <location EndPos="526" StartPos="525" width="2"/>
   <labl>Activity, teaching</labl>
   <txt><![CDATA[ACTTCH indicates whether the work activities in the respondent's primary job involves teaching.  ACTTCH is derived from a question that lists a number of work activities, and the respondent is asked to check a box next to the work activity that occupied at least 10 percent of the respondent's time in a typical work week.  Related variables include ACTCAP, ACTDED, ACTMGT, ACTRD, ACTRDT, and ACTRES.
 
@@ -7069,7 +7089,7 @@ ACTTCH differs from a similar variable WATEA in that ACTTCH is an NSF recode usi
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="WADEV" dcml="0" files="ExtractData" intrvl="discrete" name="WADEV">
-  <location EndPos="526" StartPos="525" width="2"/>
+  <location EndPos="528" StartPos="527" width="2"/>
   <labl>Work activities on principal job: development</labl>
   <txt><![CDATA[WADEV indicates whether or not the respondent spent at least ten percent of time in his/her principal job in development during a typical work week.  In the survey, development is defined as using knowledge gained from research for the production of materials or devices.  Other variables regarding work activities include WAACC, WAAPRSH, WABRSH, WACOM, WADSN, WAEMRL, WAMGMT, WAOT, WAPROD, WAQM, WASALE, WASVC, and WATEA.]]></txt>
   <catgry>
@@ -7088,7 +7108,7 @@ ACTTCH differs from a similar variable WATEA in that ACTTCH is an NSF recode usi
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="WADSN" dcml="0" files="ExtractData" intrvl="discrete" name="WADSN">
-  <location EndPos="528" StartPos="527" width="2"/>
+  <location EndPos="530" StartPos="529" width="2"/>
   <labl>Work activities on principal job: design</labl>
   <txt><![CDATA[WADSN indicates whether or not the respondent spent at least ten percent of time in his/her principal job in designing equipment, processes, structures, and/or models during a typical work week.  Other variables regarding work activities include WAACC, WAAPRSH, WABRSH, WACOM, WADEV, WAEMRL, WAMGMT, WAOT, WAPROD, WAQM, WASALE, WASVC, and WATEA.]]></txt>
   <catgry>
@@ -7107,7 +7127,7 @@ ACTTCH differs from a similar variable WATEA in that ACTTCH is an NSF recode usi
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="WAEMRL" dcml="0" files="ExtractData" intrvl="discrete" name="WAEMRL">
-  <location EndPos="530" StartPos="529" width="2"/>
+  <location EndPos="532" StartPos="531" width="2"/>
   <labl>Work activities on principal job: employee relations</labl>
   <txt><![CDATA[WAEMRL indicates whether or not the respondent spent at least ten percent of time in his/her principal job in employee relations, including recruiting, personnel development, and training, during a typical work week.  Other variables regarding work activities include WAACC, WAAPRSH, WABRSH, WACOM, WADEV, WADSN, WAMGMT, WAOT, WAPROD, WAQM, WASALE, WASVC, and WATEA.]]></txt>
   <catgry>
@@ -7126,7 +7146,7 @@ ACTTCH differs from a similar variable WATEA in that ACTTCH is an NSF recode usi
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="WAMGMT" dcml="0" files="ExtractData" intrvl="discrete" name="WAMGMT">
-  <location EndPos="532" StartPos="531" width="2"/>
+  <location EndPos="534" StartPos="533" width="2"/>
   <labl>Work activities on principal job: management and administration</labl>
   <txt><![CDATA[WAMGMT indicates whether or not the respondent spent at least ten percent of time in his/her principal job in managing and supervising during a typical work week.  Other variables regarding work activities include WAACC, WAAPRSH, WABRSH, WACOM, WADEV, WADSN, WAMGMT, WAOT, WAPROD, WAQM, WASALE, WASVC, and WATEA.]]></txt>
   <catgry>
@@ -7145,7 +7165,7 @@ ACTTCH differs from a similar variable WATEA in that ACTTCH is an NSF recode usi
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="WAOT" dcml="0" files="ExtractData" intrvl="discrete" name="WAOT">
-  <location EndPos="534" StartPos="533" width="2"/>
+  <location EndPos="536" StartPos="535" width="2"/>
   <labl>Work activities on principal job: other</labl>
   <txt><![CDATA[WAOT indicates whether or not the respondent spent at least ten percent of time in his/her principal job in an activity other than the activities listed in the questionnaire during a typical work week.  Other variables regarding work activities include WAACC, WAAPRSH, WABRSH, WACOM, WADEV, WADSN, WAEMRL, WAMGMT, WAPROD, WAQM, WASALE, WASVC, and WATEA.]]></txt>
   <catgry>
@@ -7164,7 +7184,7 @@ ACTTCH differs from a similar variable WATEA in that ACTTCH is an NSF recode usi
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="WAPROD" dcml="0" files="ExtractData" intrvl="discrete" name="WAPROD">
-  <location EndPos="536" StartPos="535" width="2"/>
+  <location EndPos="538" StartPos="537" width="2"/>
   <labl>Work activities on principal job: production, operations, maintenance</labl>
   <txt><![CDATA[WAPROD indicates whether or not the respondent spent at least ten percent of time in his/her principal job in production, operations, and maintenance during a typical work week.  Other variables regarding work activities include WAACC, WAAPRSH, WABRSH, WACOM, WADEV, WADSN, WAEMRL, WAMGMT, WAOT, WAQM, WASALE, WASVC, and WATEA.]]></txt>
   <catgry>
@@ -7183,7 +7203,7 @@ ACTTCH differs from a similar variable WATEA in that ACTTCH is an NSF recode usi
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="WAQM" dcml="0" files="ExtractData" intrvl="discrete" name="WAQM">
-  <location EndPos="538" StartPos="537" width="2"/>
+  <location EndPos="540" StartPos="539" width="2"/>
   <labl>Work activities on principal job: quality or productivity management</labl>
   <txt><![CDATA[WAQM indicates whether or not the respondent spent at least ten percent of time in his/her principal job in quality or productivity management during a typical work week.  Other variables regarding work activities include WAACC, WAAPRSH, WABRSH, WACOM, WADEV, WADSN, WAEMRL, WAMGMT, WAOT, WAPROD, WASALE, WASVC, and WATEA.]]></txt>
   <catgry>
@@ -7202,7 +7222,7 @@ ACTTCH differs from a similar variable WATEA in that ACTTCH is an NSF recode usi
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="WASALE" dcml="0" files="ExtractData" intrvl="discrete" name="WASALE">
-  <location EndPos="540" StartPos="539" width="2"/>
+  <location EndPos="542" StartPos="541" width="2"/>
   <labl>Work activities on principal job: sales, purchasing, marketing</labl>
   <txt><![CDATA[WASALE indicates whether or not the respondent spent at least ten percent of time in his/her principal job doing sales, purchasing, marketing, customer service, or public relations during a typical work week.  Other variables regarding work activities include WAACC, WAAPRSH, WABRSH, WACOM, WADEV, WADSN, WAEMRL, WAMGMT, WAOT, WAPROD, WAQM, WASVC, and WATEA.]]></txt>
   <catgry>
@@ -7221,7 +7241,7 @@ ACTTCH differs from a similar variable WATEA in that ACTTCH is an NSF recode usi
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="WASVC" dcml="0" files="ExtractData" intrvl="discrete" name="WASVC">
-  <location EndPos="542" StartPos="541" width="2"/>
+  <location EndPos="544" StartPos="543" width="2"/>
   <labl>Work activities on principal job: professional services</labl>
   <txt><![CDATA[WASVC indicates whether or not the respondent spent at least ten percent of time in his/her principal job in professional services, including health care, counseling, legal services, etc, during a typical work week.  Other variables regarding work activities include WAACC, WAAPRSH, WABRSH, WACOM, WADEV, WADSN, WAEMRL, WAMGMT, WAOT, WAPROD, WAQM, WASALE, and WATEA.]]></txt>
   <catgry>
@@ -7240,7 +7260,7 @@ ACTTCH differs from a similar variable WATEA in that ACTTCH is an NSF recode usi
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="WATEA" dcml="0" files="ExtractData" intrvl="discrete" name="WATEA">
-  <location EndPos="544" StartPos="543" width="2"/>
+  <location EndPos="546" StartPos="545" width="2"/>
   <labl>Work activities on principal job: teaching</labl>
   <txt><![CDATA[WATEA indicates whether or not the respondent spent at least ten percent of time in his/her principal job teaching during a typical work week.  Other variables regarding work activities include WAACC, WAAPRSH, WABRSH, WACOM, WADEV, WADSN, WAEMRL, WAMGMT, WAOT, WAPROD, WAQM, WASALE, and WASVC.
 
@@ -7261,7 +7281,7 @@ WATEA differs from a similar variable ACTTCH in that WATEA is the original respo
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="WAACC" dcml="0" files="ExtractData" intrvl="discrete" name="WAACC">
-  <location EndPos="546" StartPos="545" width="2"/>
+  <location EndPos="548" StartPos="547" width="2"/>
   <labl>Work activities on principal job: accounting, finance, contracts</labl>
   <txt><![CDATA[WAACC indicates whether or not the respondent spent at least ten percent of time in his/her principal job in accounting, finance, or contracts during a typical work week.  Other variables regarding work activities include WAAPRSH, WABRSH, WACOM, WADEV, WADSN, WAEMRL, WAMGMT, WAOT, WAPROD, WAQM, WASALE, WASVC, and WATEA.]]></txt>
   <catgry>
@@ -7280,7 +7300,7 @@ WATEA differs from a similar variable ACTTCH in that WATEA is the original respo
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="WAAPRSH" dcml="0" files="ExtractData" intrvl="discrete" name="WAAPRSH">
-  <location EndPos="548" StartPos="547" width="2"/>
+  <location EndPos="550" StartPos="549" width="2"/>
   <labl>Work activities on principal job : applied research</labl>
   <txt><![CDATA[WAAPRSH indicates whether or not the respondent spent at least ten percent of time in his/her principal job in applied research during a typical work week.  In the survey, applied research is defined as study directed toward gaining scientific knowledge to meet a recognized need.  Other variables regarding work activities include WAACC, WABRSH, WACOM, WADEV, WADSN, WAEMRL, WAMGMT, WAOT, WAPROD, WAQM, WASALE, WASVC, and WATEA.]]></txt>
   <catgry>
@@ -7299,7 +7319,7 @@ WATEA differs from a similar variable ACTTCH in that WATEA is the original respo
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="WABRSH" dcml="0" files="ExtractData" intrvl="discrete" name="WABRSH">
-  <location EndPos="550" StartPos="549" width="2"/>
+  <location EndPos="552" StartPos="551" width="2"/>
   <labl>Work activities on principal job: basic research</labl>
   <txt><![CDATA[WABRSH indicates whether or not the respondent spent at least ten percent of time in his/her principal job in basic research during a typical work week.  In the survey, basic research is defined as study directed toward gaining scientific knowledge for its own sake.  Other variables regarding work activities include WAACC, WAAPRSH, WACOM, WADEV, WADSN, WAEMRL, WAMGMT, WAOT, WAPROD, WAQM, WASALE, WASVC, and WATEA.]]></txt>
   <catgry>
@@ -7318,7 +7338,7 @@ WATEA differs from a similar variable ACTTCH in that WATEA is the original respo
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="WACOM" dcml="0" files="ExtractData" intrvl="discrete" name="WACOM">
-  <location EndPos="552" StartPos="551" width="2"/>
+  <location EndPos="554" StartPos="553" width="2"/>
   <labl>Work activities on principal job: computer applications</labl>
   <txt><![CDATA[WACOM indicates whether or not the respondent spent at least ten percent of time in his/her principal job in computer applications, programming, or systems development during a typical work week.  Other variables regarding work activities include WAACC, WAAPRSH, WABRSH, WADEV, WADSN, WAEMRL, WAMGMT, WAOT, WAPROD, WAQM, WASALE, WASVC, and WATEA.]]></txt>
   <catgry>
@@ -7337,7 +7357,7 @@ WATEA differs from a similar variable ACTTCH in that WATEA is the original respo
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="WKSORG" dcml="0" files="ExtractData" intrvl="discrete" name="WKSORG">
-  <location EndPos="554" StartPos="553" width="2"/>
+  <location EndPos="556" StartPos="555" width="2"/>
   <labl>Work on principal job: work with others in same organization</labl>
   <txt><![CDATA[WKSORG indicates whether or not the respondent worked with other individuals within the same organization while performing his/her principal job.]]></txt>
   <catgry>
@@ -7356,7 +7376,7 @@ WATEA differs from a similar variable ACTTCH in that WATEA is the original respo
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="WKTEAM" dcml="0" files="ExtractData" intrvl="discrete" name="WKTEAM">
-  <location EndPos="556" StartPos="555" width="2"/>
+  <location EndPos="558" StartPos="557" width="2"/>
   <labl>Work on principal job: work with immediate group or team</labl>
   <txt><![CDATA[WKTEAM indicates whether or not the respondent worked with an immediate group or team in his/her principal job.]]></txt>
   <catgry>
@@ -7375,7 +7395,7 @@ WATEA differs from a similar variable ACTTCH in that WATEA is the original respo
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="WKUSORG" dcml="0" files="ExtractData" intrvl="discrete" name="WKUSORG">
-  <location EndPos="558" StartPos="557" width="2"/>
+  <location EndPos="560" StartPos="559" width="2"/>
   <labl>Work on principal job: work with others in other US organization</labl>
   <txt><![CDATA[WKUSORG indicates whether or not the respondent worked with individuals from other organizations in the US in performing his/her principal job during the week of April 1st, 2006.]]></txt>
   <catgry>
@@ -7394,7 +7414,7 @@ WATEA differs from a similar variable ACTTCH in that WATEA is the original respo
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="SUPWK" dcml="0" files="ExtractData" intrvl="discrete" name="SUPWK">
-  <location EndPos="560" StartPos="559" width="2"/>
+  <location EndPos="562" StartPos="561" width="2"/>
   <labl>Supervisory work</labl>
   <txt><![CDATA[SUPWK indicates whether or not the respondent supervised other employees as a part of his/her principal job.]]></txt>
   <catgry>
@@ -7413,7 +7433,7 @@ WATEA differs from a similar variable ACTTCH in that WATEA is the original respo
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="PAPERS" dcml="0" files="ExtractData" intrvl="contin" name="PAPERS">
-  <location EndPos="562" StartPos="561" width="2"/>
+  <location EndPos="564" StartPos="563" width="2"/>
   <labl>Number of papers (co)authored presented</labl>
   <txt><![CDATA[PAPERS reports the number of papers the respondent had authored or co-authored that had been presented at conferences since October 1998.]]></txt>
   <codInstr><![CDATA[6 = 6 or more papers
@@ -7423,7 +7443,7 @@ WATEA differs from a similar variable ACTTCH in that WATEA is the original respo
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="PPRS95" dcml="0" files="ExtractData" intrvl="discrete" name="PPRS95">
-  <location EndPos="565" StartPos="563" width="3"/>
+  <location EndPos="567" StartPos="565" width="3"/>
   <labl>Number of papers presented (intervaled)</labl>
   <txt><![CDATA[PPRS95 gives the number of articles the respondent had authored or co-authored that had been published since April 1990.]]></txt>
   <catgry>
@@ -7482,7 +7502,7 @@ WATEA differs from a similar variable ACTTCH in that WATEA is the original respo
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="PATENT" dcml="0" files="ExtractData" intrvl="discrete" name="PATENT">
-  <location EndPos="567" StartPos="566" width="2"/>
+  <location EndPos="569" StartPos="568" width="2"/>
   <labl>Named as inventor for U.S patent</labl>
   <txt><![CDATA[PATENT indicates that the respondent had been named as an inventor for a US patent.]]></txt>
   <catgry>
@@ -7501,7 +7521,7 @@ WATEA differs from a similar variable ACTTCH in that WATEA is the original respo
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="ARTC95" dcml="0" files="ExtractData" intrvl="discrete" name="ARTC95">
-  <location EndPos="569" StartPos="568" width="2"/>
+  <location EndPos="571" StartPos="570" width="2"/>
   <labl>Number of articles authored (intervals)</labl>
   <txt><![CDATA[ARTC95 gives the number of articles the respondent has authored or co-authored that have been published as of the reference week, grouped in intervals of 5.  The topcode is 51, meaning more than 50 of the respondent's papers were accepted for publication.  A similar variable available for other samples is ARTICLE.]]></txt>
   <catgry>
@@ -7560,7 +7580,7 @@ WATEA differs from a similar variable ACTTCH in that WATEA is the original respo
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="ARTICLE" dcml="0" files="ExtractData" intrvl="discrete" name="ARTICLE">
-  <location EndPos="571" StartPos="570" width="2"/>
+  <location EndPos="573" StartPos="572" width="2"/>
   <labl>Number of articles authored</labl>
   <txt><![CDATA[ARTICLE gives the number of articles the respondent has authored or coauthored that have been accepted for publication as of the reference week.  A similar variable is ARTC95.]]></txt>
   <catgry>
@@ -7595,7 +7615,7 @@ WATEA differs from a similar variable ACTTCH in that WATEA is the original respo
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="PRMBR" dcml="0" files="ExtractData" intrvl="discrete" name="PRMBR">
-  <location EndPos="575" StartPos="572" width="4"/>
+  <location EndPos="577" StartPos="574" width="4"/>
   <labl>Number of professional society memberships</labl>
   <txt><![CDATA[PRMBR reports the number of professional memberships to which the respondent belonged.]]></txt>
   <catgry>
@@ -7698,7 +7718,7 @@ WATEA differs from a similar variable ACTTCH in that WATEA is the original respo
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="PROMTGI" dcml="0" files="ExtractData" intrvl="discrete" name="PROMTGI">
-  <location EndPos="577" StartPos="576" width="2"/>
+  <location EndPos="579" StartPos="578" width="2"/>
   <labl>Attended professional meetings in past year</labl>
   <txt><![CDATA[PROMTGI indicates whether or not the respondent attended a professional meeting within the last year.]]></txt>
   <catgry>
@@ -7721,7 +7741,7 @@ WATEA differs from a similar variable ACTTCH in that WATEA is the original respo
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="BOOKSP" dcml="0" files="ExtractData" intrvl="discrete" name="BOOKSP">
-  <location EndPos="579" StartPos="578" width="2"/>
+  <location EndPos="581" StartPos="580" width="2"/>
   <labl>Books or monographs (co)authored accepted for publication indicator</labl>
   <txt><![CDATA[BOOKSP reports whether or not the respondent had authored or co-authored at least one published book since October 1998]]></txt>
   <catgry>
@@ -7740,7 +7760,7 @@ WATEA differs from a similar variable ACTTCH in that WATEA is the original respo
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="EXPECTED" dcml="0" files="ExtractData" intrvl="discrete" name="EXPECTED">
-  <location EndPos="581" StartPos="580" width="2"/>
+  <location EndPos="583" StartPos="582" width="2"/>
   <labl>Work similar to what you expected to be doing</labl>
   <txt><![CDATA[EXPECTED describes how closely the respondent's work activities fit their expectations from when he/she first completed his/her highest degree.]]></txt>
   <catgry>
@@ -7763,7 +7783,7 @@ WATEA differs from a similar variable ACTTCH in that WATEA is the original respo
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="SALARY" dcml="0" files="ExtractData" intrvl="contin" name="SALARY">
-  <location EndPos="588" StartPos="582" width="7"/>
+  <location EndPos="590" StartPos="584" width="7"/>
   <labl>Salary (annualized)</labl>
   <txt><![CDATA[SALARY provides the respondent's salary for the principal job.  Respondents are asked to report their basic annual salary, excluding deductions, bonuses, overtime or additional compensation for summertime teaching or research. If the respondent is not salaried, they are asked to provide an estimate of their annual earned income, excluding business expenses.]]></txt>
   <codInstr><![CDATA[SALARY is a 7-digit numeric variable.
@@ -7774,7 +7794,7 @@ WATEA differs from a similar variable ACTTCH in that WATEA is the original respo
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="EARN" dcml="0" files="ExtractData" intrvl="contin" name="EARN">
-  <location EndPos="596" StartPos="589" width="8"/>
+  <location EndPos="598" StartPos="591" width="8"/>
   <labl>Total earned income before deductions in previous year (public use)</labl>
   <txt><![CDATA[EARN provides a public-use and top-coded version of the respondent's earnings before deductions for the year prior to the survey.]]></txt>
   <codInstr><![CDATA[EARN is a 7-digit numeric variable.
@@ -7786,7 +7806,7 @@ WATEA differs from a similar variable ACTTCH in that WATEA is the original respo
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="HHINC" dcml="0" files="ExtractData" intrvl="contin" name="HHINC">
-  <location EndPos="603" StartPos="597" width="7"/>
+  <location EndPos="605" StartPos="599" width="7"/>
   <labl>Total household income: 1996</labl>
   <txt><![CDATA[HHINC reports the total income of the respondent's household.]]></txt>
   <codInstr><![CDATA[Codes9999997 = Survey Exclusion/Confidentiality
@@ -7795,7 +7815,7 @@ WATEA differs from a similar variable ACTTCH in that WATEA is the original respo
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="CPI2009C" dcml="3" files="ExtractData" intrvl="contin" name="CPI2009C">
-  <location EndPos="609" StartPos="604" width="6"/>
+  <location EndPos="611" StartPos="606" width="6"/>
   <labl>CPI conversion factor - current year</labl>
   <txt><![CDATA[CPI2009C provides the CPI-U multiplier (available from the Bureau of Labor Statistics) to convert dollar figures to constant 2009 dollars for variables whose reference year is the survey year (SALARY). Multiplying dollar amounts by this variable (which is constant within years) will render them comparable across time and thus suitable for multivariate analysis. 
 
@@ -7807,7 +7827,7 @@ For more information on how to use CPI2009C and CPI2009P, please see the SESTAT 
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="CPI2009P" dcml="3" files="ExtractData" intrvl="contin" name="CPI2009P">
-  <location EndPos="615" StartPos="610" width="6"/>
+  <location EndPos="617" StartPos="612" width="6"/>
   <labl>CPI conversion factor - previous year</labl>
   <txt><![CDATA[CPI2009P provides the CPI-U multiplier (available from the Bureau of Labor Statistics) to convert dollar figures to constant 2009 dollars for variables whose reference year is the previous year (EARN and HHINC). Multiplying dollar amounts by this variable (which is constant within years) will render them comparable across time and thus suitable for multivariate analysis. 
 
@@ -7819,7 +7839,7 @@ For more information on how to use CPI2009P and CPI2009C, please see the SESTAT 
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="ALTANY" dcml="0" files="ExtractData" intrvl="discrete" name="ALTANY">
-  <location EndPos="617" StartPos="616" width="2"/>
+  <location EndPos="619" StartPos="618" width="2"/>
   <labl>Alternative work arrangement</labl>
   <txt><![CDATA[ALTANY indicates whether or not the respondent has an alternative or temporary work arrangement during the reference week.  This variable has a value of yes if the respondent reported having a type of relationship with his/her principal employer such as being self-employed, job-sharing, working from home, etc.  Related variables that identify the type of alternative or temporary work arrangement or the reason why they choose to have an alternative or temporary work arrangement include ALTBOSS, ALTELSE, ALTEXP, ALTFAM, ALTFLEX, ALTHOME, ALTOTHR, ALTOUT, ALTPAY, ALTPRI, ALTSEAS, ALTSEC, ALTSELF, ALTSHARE, ALTSTAT, ALTTEMP, ALTTRAIN, and ALTTYPE.]]></txt>
   <catgry>
@@ -7838,7 +7858,7 @@ For more information on how to use CPI2009P and CPI2009C, please see the SESTAT 
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="ALTPRI" dcml="0" files="ExtractData" intrvl="discrete" name="ALTPRI">
-  <location EndPos="619" StartPos="618" width="2"/>
+  <location EndPos="621" StartPos="620" width="2"/>
   <labl>Main reason for alternative work arrangement</labl>
   <txt><![CDATA[ALTPRI gives the respondent's reported primary reason for a temporary or alternative work arrangement.  The variable ALTANY identifies respondents who reported to have an alternative work arrangement. Related variables that identify the type of alternative or temporary work arrangement or the reason why they choose to have an alternative or temporary work arrangement include ALTBOSS, ALTEXP, ALTFAM, ALTFLEX, ALTELSE, ALTHOME,  ALTOTHR, ALTOUT, ALTPAY, ALTSEAS, ALTSELF, ALTSHARE, ALTSTAT, ALTTEMP, ALTTRAIN, and ALTTYPE.]]></txt>
   <catgry>
@@ -7885,7 +7905,7 @@ For more information on how to use CPI2009P and CPI2009C, please see the SESTAT 
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="ALTSEC" dcml="0" files="ExtractData" intrvl="discrete" name="ALTSEC">
-  <location EndPos="621" StartPos="620" width="2"/>
+  <location EndPos="623" StartPos="622" width="2"/>
   <labl>Second most important reason for alternative work arrangement</labl>
   <txt><![CDATA[ALTSEC gives the respondent's reported second most important reason for a temporary or alternative work arrangement.  The variable ALTANY identifies respondents who reported to have an alternative work arrangement. Related variables that identify the type of alternative or temporary work arrangement or the reason why they choose to have an alternative or temporary work arrangement include ALTBOSS, ALTEXP, ALTFAM, ALTFLEX, ALTELSE, ALTHOME,  ALTOTHR, ALTOUT, ALTPAY, ALTSEAS, ALTSELF, ALTSHARE, ALTSTAT, ALTTEMP, ALTTRAIN, and ALTTYPE.]]></txt>
   <catgry>
@@ -7936,7 +7956,7 @@ For more information on how to use CPI2009P and CPI2009C, please see the SESTAT 
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="ALTBOSS" dcml="0" files="ExtractData" intrvl="discrete" name="ALTBOSS">
-  <location EndPos="623" StartPos="622" width="2"/>
+  <location EndPos="625" StartPos="624" width="2"/>
   <labl>Reason for alternative work arrangement: own boss</labl>
   <txt><![CDATA[ALTBOSS indicates if a respondent reported that he/she chose to have an alternative work arrangement because he/she enjoyed being their own boss, that is, that the respondent is self-employed.  Other variables giving other reasons why respondents have alternative work arrangements include ALTEXP, ALTFAM, ALTFLEX, ALTOTHR, ALTPAY, ALTSTAT, ALTTRAIN, and ALTTYPE.  The variable ALTANY identifies respondents who reported to have an alternative work arrangement.]]></txt>
   <catgry>
@@ -7955,7 +7975,7 @@ For more information on how to use CPI2009P and CPI2009C, please see the SESTAT 
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="ALTEXP" dcml="0" files="ExtractData" intrvl="discrete" name="ALTEXP">
-  <location EndPos="625" StartPos="624" width="2"/>
+  <location EndPos="627" StartPos="626" width="2"/>
   <labl>Reason for alternative work arrangement: gain experience</labl>
   <txt><![CDATA[ALTEXP indicates that the respondent chose to have an alternative or temporary work arrangement during the reference week in order to gain experience that might lead to a permanent job.  Other variables giving other reasons why respondents have alternative work arrangements include ALTBOSS, ALTFAM, ALTFLEX, ALTOTHR, ALTPAY, ALTSTAT, ALTTRAIN, and ALTTYPE.  The variable ALTANY identifies respondents who reported to have an alternative work arrangement.]]></txt>
   <catgry>
@@ -7974,7 +7994,7 @@ For more information on how to use CPI2009P and CPI2009C, please see the SESTAT 
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="ALTFAM" dcml="0" files="ExtractData" intrvl="discrete" name="ALTFAM">
-  <location EndPos="627" StartPos="626" width="2"/>
+  <location EndPos="629" StartPos="628" width="2"/>
   <labl>Reason for alternative work arrangement: family-related reasons</labl>
   <txt><![CDATA[ALTFAM indicates that the respondent chose to have an alternative or temporary work arrangement during the reference week because of family-related reasons.  Other variables giving other reasons why respondents have alternative work arrangements include ALTBOSS, ALTEXP, ALTFLEX, ALTOTHR, ALTPAY, ALTSTAT, ALTTRAIN, and ALTTYPE.  The variable ALTANY identifies respondents who reported to have an alternative work arrangement.]]></txt>
   <catgry>
@@ -7993,7 +8013,7 @@ For more information on how to use CPI2009P and CPI2009C, please see the SESTAT 
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="ALTFLEX" dcml="0" files="ExtractData" intrvl="discrete" name="ALTFLEX">
-  <location EndPos="629" StartPos="628" width="2"/>
+  <location EndPos="631" StartPos="630" width="2"/>
   <labl>Reason for alternative work arrangement: schedule flexibility</labl>
   <txt><![CDATA[ALTFLEX indicates that the respondent chose to have an alternative or temporary work arrangement during the reference week to have schedule flexibility.  Other variables giving other reasons why respondents have alternative work arrangements include ALTBOSS, ALTEXP, ALTFAM, ALTOTHR, ALTPAY, ALTSTAT, ALTTRAIN, and ALTTYPE.  The variable ALTANY identifies respondents who reported to have an alternative work arrangement.]]></txt>
   <catgry>
@@ -8012,7 +8032,7 @@ For more information on how to use CPI2009P and CPI2009C, please see the SESTAT 
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="ALTOTHR" dcml="0" files="ExtractData" intrvl="discrete" name="ALTOTHR">
-  <location EndPos="631" StartPos="630" width="2"/>
+  <location EndPos="633" StartPos="632" width="2"/>
   <labl>Reason for alternative work arrangement: other</labl>
   <txt><![CDATA[ALTOTHR indicates that the respondent chose to have an alternative or temporary work arrangement during the reference week for some reason other than the reasons listed.  Other variables giving other reasons why respondents have alternative work arrangements include ALTBOSS, ALTEXP, ALTFAM, ALTFLEX, ALTPAY, ALTSTAT, ALTTRAIN, and ALTTYPE.  The variable ALTANY identifies respondents who reported to have an alternative work arrangement.]]></txt>
   <catgry>
@@ -8031,7 +8051,7 @@ For more information on how to use CPI2009P and CPI2009C, please see the SESTAT 
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="ALTPAY" dcml="0" files="ExtractData" intrvl="discrete" name="ALTPAY">
-  <location EndPos="633" StartPos="632" width="2"/>
+  <location EndPos="635" StartPos="634" width="2"/>
   <labl>Reason for alternative work arrangement: better pay</labl>
   <txt><![CDATA[ALTPAY indicates that the respondent chose to have an alternative or temporary work arrangement during the reference week for better pay.  Other variables giving other reasons why respondents have alternative work arrangements include ALTBOSS, ALTEXP, ALTFAM, ALTFLEX, ALTOTHR, ALTSTAT, ALTTRAIN, and ALTTYPE.  The variable ALTANY identifies respondents who reported to have an alternative work arrangement.]]></txt>
   <catgry>
@@ -8050,7 +8070,7 @@ For more information on how to use CPI2009P and CPI2009C, please see the SESTAT 
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="ALTSTAT" dcml="0" files="ExtractData" intrvl="discrete" name="ALTSTAT">
-  <location EndPos="635" StartPos="634" width="2"/>
+  <location EndPos="637" StartPos="636" width="2"/>
   <labl>Reason for alternative work arrangement: status changed to temporary</labl>
   <txt><![CDATA[ALTSTAT indicates that the respondent had an alternative or temporary work arrangement during the reference week because the principal employer changed the respondent's status to temporary.  Other variables giving other reasons why respondents have alternative work arrangements include ALTBOSS, ALTEXP, ALTFAM, ALTFLEX, ALTOTHR, ALTPAY, ALTTRAIN, and ALTTYPE.  The variable ALTANY identifies respondents who reported to have an alternative work arrangement.]]></txt>
   <catgry>
@@ -8069,7 +8089,7 @@ For more information on how to use CPI2009P and CPI2009C, please see the SESTAT 
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="ALTTRAIN" dcml="0" files="ExtractData" intrvl="discrete" name="ALTTRAIN">
-  <location EndPos="637" StartPos="636" width="2"/>
+  <location EndPos="639" StartPos="638" width="2"/>
   <labl>Reason for alternative work arrangement: school or training program</labl>
   <txt><![CDATA[ALTTRAIN indicates that the respondent had an alternative or temporary work arrangement during the reference week because respondent was in school or some type of training program.  Other variables giving other reasons why respondents have alternative work arrangements include ALTBOSS, ALTEXP, ALTFAM, ALTFLEX, ALTOTHR, ALTPAY, ALTSTAT, and ALTTYPE.  The variable ALTANY identifies respondents who reported to have an alternative work arrangement.]]></txt>
   <catgry>
@@ -8088,7 +8108,7 @@ For more information on how to use CPI2009P and CPI2009C, please see the SESTAT 
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="ALTTYPE" dcml="0" files="ExtractData" intrvl="discrete" name="ALTTYPE">
-  <location EndPos="639" StartPos="638" width="2"/>
+  <location EndPos="641" StartPos="640" width="2"/>
   <labl>Reason for alternative work arrangement: only type of work I could find</labl>
   <txt><![CDATA[ALTTYPE indicates that the respondent had an alternative or temporary work arrangement during the reference week because it was the only type of work the respondent could find.  Other variables giving other reasons why respondents have alternative work arrangements include ALTBOSS, ALTEXP, ALTFAM, ALTFLEX, ALTOTHR, ALTPAY, ALTSTAT, and ALTTRAIN.  The variable ALTANY identifies respondents who reported to have an alternative work arrangement.]]></txt>
   <catgry>
@@ -8107,7 +8127,7 @@ For more information on how to use CPI2009P and CPI2009C, please see the SESTAT 
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="ALTHOME" dcml="0" files="ExtractData" intrvl="discrete" name="ALTHOME">
-  <location EndPos="641" StartPos="640" width="2"/>
+  <location EndPos="643" StartPos="642" width="2"/>
   <labl>Relationship with principal employer: work from home</labl>
   <txt><![CDATA[ALTHOME indicates that a respondent works from home for half or more of his/her work time for an alternative or temporary work arrangement.  The variable ALTANY identifies respondents who reported to have an alternative work arrangement. Related variables that identify the type of alternative or temporary work arrangement or the reason why they choose to have an alternative or temporary work arrangement include ALTBOSS, ALTEXP, ALTFAM, ALTFLEX, ALTELSE, ALTOTHR, ALTOUT, ALTPAY, ALTPRI, ALTSEAS, ALTSEC, ALTSELF, ALTSHARE, ALTSTAT, ALTTEMP, ALTTRAIN, and ALTTYPE.]]></txt>
   <catgry>
@@ -8126,7 +8146,7 @@ For more information on how to use CPI2009P and CPI2009C, please see the SESTAT 
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="ALTOUT" dcml="0" files="ExtractData" intrvl="discrete" name="ALTOUT">
-  <location EndPos="643" StartPos="642" width="2"/>
+  <location EndPos="645" StartPos="644" width="2"/>
   <labl>Relationship with principal employer: work contracted out by employer</labl>
   <txt><![CDATA[ALTOUT indicates that a respondent's primary employer contracted out his/her services to other organizations, which is considered an alternative or temporary work arrangement.  The variable ALTANY identifies respondents who reported to have an alternative work arrangement. Related variables that identify the type of alternative or temporary work arrangement or the reason why they choose to have an alternative or temporary work arrangement include ALTBOSS, ALTEXP, ALTFAM, ALTFLEX, ALTELSE, ALTOTHR, ALTHOME, ALTPAY, ALTPRI, ALTSEAS, ALTSEC, ALTSELF, ALTSHARE, ALTSTAT, ALTTEMP, ALTTRAIN, and ALTTYPE.]]></txt>
   <catgry>
@@ -8145,7 +8165,7 @@ For more information on how to use CPI2009P and CPI2009C, please see the SESTAT 
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="ALTELSE" dcml="0" files="ExtractData" intrvl="discrete" name="ALTELSE">
-  <location EndPos="645" StartPos="644" width="2"/>
+  <location EndPos="647" StartPos="646" width="2"/>
   <labl>Relationship with principal employer: other</labl>
   <txt><![CDATA[ALTELSE indicates that a respondent reported having an alternative or temporary work arrangement other than the options listed on the survey. The variable ALTANY identifies respondents who reported to have an alternative work arrangement. Related variables that identify the type of alternative or temporary work arrangement or the reason why they choose to have an alternative or temporary work arrangement include ALTBOSS, ALTEXP, ALTFAM, ALTFLEX, ALTHOME, ALTOTHR, ALTOUT, ALTPAY, ALTPRI, ALTSEAS, ALTSEC, ALTSELF, ALTSHARE, ALTSTAT, ALTTEMP, ALTTRAIN, and ALTTYPE.]]></txt>
   <catgry>
@@ -8164,7 +8184,7 @@ For more information on how to use CPI2009P and CPI2009C, please see the SESTAT 
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="ALTSEAS" dcml="0" files="ExtractData" intrvl="discrete" name="ALTSEAS">
-  <location EndPos="647" StartPos="646" width="2"/>
+  <location EndPos="649" StartPos="648" width="2"/>
   <labl>Relationship with principal employer: short term</labl>
   <txt><![CDATA[ALTSEAS indicates that a respondent works on a seasonal or short term basis.  The variable ALTANY identifies respondents who reported to have an alternative work arrangement. Related variables that identify the type of alternative or temporary work arrangement or the reason why they choose to have an alternative or temporary work arrangement include ALTBOSS, ALTEXP, ALTFAM, ALTFLEX, ALTELSE, ALTHOME,  ALTOTHR, ALTOUT, ALTPAY, ALTPRI, ALTSEC, ALTSELF, ALTSHARE, ALTSTAT, ALTTEMP, ALTTRAIN, and ALTTYPE.]]></txt>
   <catgry>
@@ -8183,7 +8203,7 @@ For more information on how to use CPI2009P and CPI2009C, please see the SESTAT 
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="ALTSELF" dcml="0" files="ExtractData" intrvl="discrete" name="ALTSELF">
-  <location EndPos="649" StartPos="648" width="2"/>
+  <location EndPos="651" StartPos="650" width="2"/>
   <labl>Relationship with principal employer: self-employed</labl>
   <txt><![CDATA[ALTSELF indicates that a respondent is self-employed, which is considered an alternative work arrangement.  The variable ALTANY identifies respondents who reported to have an alternative work arrangement. Related variables that identify the type of alternative or temporary work arrangement or the reason why they choose to have an alternative or temporary work arrangement include ALTBOSS, ALTEXP, ALTFAM, ALTFLEX, ALTELSE, ALTHOME,  ALTOTHR, ALTOUT, ALTPAY, ALTPRI, ALTSEC, ALTSEAS, ALTSHARE, ALTSTAT, ALTTEMP, ALTTRAIN, and ALTTYPE.]]></txt>
   <catgry>
@@ -8202,7 +8222,7 @@ For more information on how to use CPI2009P and CPI2009C, please see the SESTAT 
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="ALTSHARE" dcml="0" files="ExtractData" intrvl="discrete" name="ALTSHARE">
-  <location EndPos="651" StartPos="650" width="2"/>
+  <location EndPos="653" StartPos="652" width="2"/>
   <labl>Relationship with principal employer: job sharing</labl>
   <txt><![CDATA[ALTSHARE indicates that a respondent does job-sharing, which is considered an alternative work arrangement.  The variable ALTANY identifies respondents who reported to have an alternative work arrangement. Related variables that identify the type of alternative or temporary work arrangement or the reason why they choose to have an alternative or temporary work arrangement include ALTBOSS, ALTEXP, ALTFAM, ALTFLEX, ALTELSE, ALTHOME,  ALTOTHR, ALTOUT, ALTPAY, ALTPRI, ALTSEC, ALTSEAS, ALTSELF, ALTSTAT, ALTTEMP, ALTTRAIN, and ALTTYPE.]]></txt>
   <catgry>
@@ -8221,7 +8241,7 @@ For more information on how to use CPI2009P and CPI2009C, please see the SESTAT 
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="ALTTEMP" dcml="0" files="ExtractData" intrvl="discrete" name="ALTTEMP">
-  <location EndPos="653" StartPos="652" width="2"/>
+  <location EndPos="655" StartPos="654" width="2"/>
   <labl>Relationship with principal employer: temp/employment agency</labl>
   <txt><![CDATA[ALTTEMP indicates that a respondent was working through a temporary help or employment agency during the reference week, which is considered an alternative work arrangement.  The variable ALTANY identifies respondents who reported to have an alternative or temporary work arrangement. Related variables that identify the type of alternative or temporary work arrangement or the reason why they choose to have an alternative or temporary work arrangement include ALTBOSS, ALTEXP, ALTFAM, ALTFLEX, ALTELSE, ALTHOME,  ALTOTHR, ALTOUT, ALTPAY, ALTPRI, ALTSEC, ALTSEAS, ALTSHARE, ALTSTAT, ALTSELF, ALTTRAIN, and ALTTYPE.]]></txt>
   <catgry>
@@ -8240,7 +8260,7 @@ For more information on how to use CPI2009P and CPI2009C, please see the SESTAT 
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="AREAAM95" dcml="0" files="ExtractData" intrvl="discrete" name="AREAAM95">
-  <location EndPos="655" StartPos="654" width="2"/>
+  <location EndPos="657" StartPos="656" width="2"/>
   <labl>Area or tech used during typical week: advanced materials</labl>
   <txt><![CDATA[AREAAM95 reports whether or not the respondent, who works in research, development, and/or design, worked with advanced materials in a typical week.
 
@@ -8261,7 +8281,7 @@ Users should note that the universe described by the original documentation does
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="AREAB95" dcml="0" files="ExtractData" intrvl="discrete" name="AREAB95">
-  <location EndPos="657" StartPos="656" width="2"/>
+  <location EndPos="659" StartPos="658" width="2"/>
   <labl>Area or tech used during typical week: biotech</labl>
   <txt><![CDATA[AREAB95 reports whether or not the respondent, who works in research, development, and/or design, worked with biotechnology in a typical week.
 
@@ -8282,7 +8302,7 @@ Users should note that the universe described by the original documentation does
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="AREAHC95" dcml="0" files="ExtractData" intrvl="discrete" name="AREAHC95">
-  <location EndPos="659" StartPos="658" width="2"/>
+  <location EndPos="661" StartPos="660" width="2"/>
   <labl>Area or tech used during typical week: high performance computing</labl>
   <txt><![CDATA[AREAHC95 reports whether or not the respondent, who works in research, development, and/or design, worked with high-performance computers in a typical week.
 
@@ -8303,7 +8323,7 @@ Users should note that the universe described by the original documentation does
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="AREAMS95" dcml="0" files="ExtractData" intrvl="discrete" name="AREAMS95">
-  <location EndPos="661" StartPos="660" width="2"/>
+  <location EndPos="663" StartPos="662" width="2"/>
   <labl>Area or tech used during typical week: semiconductor devices</labl>
   <txt><![CDATA[AREAMS95 reports whether or not the respondent, who works in research, development, and/or design, worked with semiconductor devices in a typical week.
 
@@ -8324,7 +8344,7 @@ Users should note that the universe described by the original documentation does
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="AREAR95" dcml="0" files="ExtractData" intrvl="discrete" name="AREAR95">
-  <location EndPos="663" StartPos="662" width="2"/>
+  <location EndPos="665" StartPos="664" width="2"/>
   <labl>Area or tech used during typical week: flexible manufacturing, robotics</labl>
   <txt><![CDATA[AREAR95 reports whether or not the respondent, who works in research, development, and/or design, worked with flexible manufacturing or robotics in a typical week.
 
@@ -8345,7 +8365,7 @@ Users should note that the universe described by the original documentation does
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="AREASF95" dcml="0" files="ExtractData" intrvl="discrete" name="AREASF95">
-  <location EndPos="665" StartPos="664" width="2"/>
+  <location EndPos="667" StartPos="666" width="2"/>
   <labl>Area or tech used during typical week: software producibility</labl>
   <txt><![CDATA[AREASF95 reports whether or not the respondent, who works in research, development, and/or design, worked with software producibility in a typical week.
 
@@ -8366,7 +8386,7 @@ Users should note that the universe described by the original documentation does
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="AREASP95" dcml="0" files="ExtractData" intrvl="discrete" name="AREASP95">
-  <location EndPos="667" StartPos="666" width="2"/>
+  <location EndPos="669" StartPos="668" width="2"/>
   <labl>Area or tech used during typical week: sensor and signal processing</labl>
   <txt><![CDATA[AREASP95 reports whether or not the respondent, who works in research, development, and/or design, worked with sensor or signal processing in a typical week.
 
@@ -8387,7 +8407,7 @@ Users should note that the universe described by the original documentation does
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="ENACT" dcml="0" files="ExtractData" intrvl="discrete" name="ENACT">
-  <location EndPos="669" StartPos="668" width="2"/>
+  <location EndPos="671" StartPos="670" width="2"/>
   <labl>Energy-related activity most involved in work</labl>
   <txt><![CDATA[If a respondent reported to spending most of his/her work hours in energy or fuel, ENACT specifies the energy-related activity that the respondent performs.]]></txt>
   <catgry>
@@ -8434,7 +8454,7 @@ Users should note that the universe described by the original documentation does
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="ENSRC" dcml="0" files="ExtractData" intrvl="discrete" name="ENSRC">
-  <location EndPos="671" StartPos="670" width="2"/>
+  <location EndPos="673" StartPos="672" width="2"/>
   <labl>Energy source involved most</labl>
   <txt><![CDATA[If a respondent reported to spending most of his/her work hours in energy or fuel, ENSRC specifies which type of energy the respondent works with.]]></txt>
   <catgry>
@@ -8473,7 +8493,7 @@ Users should note that the universe described by the original documentation does
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="NRREA" dcml="0" files="ExtractData" intrvl="discrete" name="NRREA">
-  <location EndPos="673" StartPos="672" width="2"/>
+  <location EndPos="675" StartPos="674" width="2"/>
   <labl>Most important reason for working outside field of highest degree</labl>
   <txt><![CDATA[NRREA reports the most important reason that the respondent was working in a field unrelated to the field of his/her highest degree. The variable NRSEC reports the second most important reason that the respondent was working in a field unrelated to the field of his/her highest degree.]]></txt>
   <catgry>
@@ -8512,7 +8532,7 @@ Users should note that the universe described by the original documentation does
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="NRSEC" dcml="0" files="ExtractData" intrvl="discrete" name="NRSEC">
-  <location EndPos="675" StartPos="674" width="2"/>
+  <location EndPos="677" StartPos="676" width="2"/>
   <labl>Second most important reason for working outside field of highest degree</labl>
   <txt><![CDATA[NRSEC reports the second most important reason that the respondent was working in a field unrelated to the field of his/her highest degree. The variable NRREA reports the most important reason that the respondent was working in a field unrelated to the field of his/her highest degree.]]></txt>
   <catgry>
@@ -8559,7 +8579,7 @@ Users should note that the universe described by the original documentation does
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="NRCHG" dcml="0" files="ExtractData" intrvl="discrete" name="NRCHG">
-  <location EndPos="677" StartPos="676" width="2"/>
+  <location EndPos="679" StartPos="678" width="2"/>
   <labl>Reason for working outside field of highest degree: career change</labl>
   <txt><![CDATA[NRCHG indicates whether or not the career change was one reason that the respondent was working in a field unrelated to the field of his/her highest degree. Other variables from this survey question include NRCON, NRFAM, NRLOC, NROCNA, NRPAY and NROT.]]></txt>
   <catgry>
@@ -8578,7 +8598,7 @@ Users should note that the universe described by the original documentation does
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="NRCON" dcml="0" files="ExtractData" intrvl="discrete" name="NRCON">
-  <location EndPos="679" StartPos="678" width="2"/>
+  <location EndPos="681" StartPos="680" width="2"/>
   <labl>Reason for working outside field of highest degree: working conditions</labl>
   <txt><![CDATA[NRCON indicates whether or not working conditions were a reason that the respondent was working in a field unrelated to the field of his/her highest degree. Other variables from this survey question include NRCHG, NRFAM, NRLOC, NROCNA, NRPAY and NROT.]]></txt>
   <catgry>
@@ -8597,7 +8617,7 @@ Users should note that the universe described by the original documentation does
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="NRFAM" dcml="0" files="ExtractData" intrvl="discrete" name="NRFAM">
-  <location EndPos="681" StartPos="680" width="2"/>
+  <location EndPos="683" StartPos="682" width="2"/>
   <labl>Reason for working outside field of highest degree: family-related reasons</labl>
   <txt><![CDATA[NRFAM indicates whether or not family was one reason for working outside field of the respondent's highest degree. Other variables from this survey question include NRCHG, NRCON, NRLOC, NROCNA, NRPAY and NROT.]]></txt>
   <catgry>
@@ -8616,7 +8636,7 @@ Users should note that the universe described by the original documentation does
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="NRLOC" dcml="0" files="ExtractData" intrvl="discrete" name="NRLOC">
-  <location EndPos="683" StartPos="682" width="2"/>
+  <location EndPos="685" StartPos="684" width="2"/>
   <labl>Reason for working outside field of highest degree: job location</labl>
   <txt><![CDATA[NRLOC indicates whether or not job location was one reason for working outside field of the respondent's highest degree. Other variables from this survey question include NRCHG, NRCON, NRFAM, NROCNA, NRPAY and NROT.]]></txt>
   <catgry>
@@ -8635,7 +8655,7 @@ Users should note that the universe described by the original documentation does
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="NROCNA" dcml="0" files="ExtractData" intrvl="discrete" name="NROCNA">
-  <location EndPos="685" StartPos="684" width="2"/>
+  <location EndPos="687" StartPos="686" width="2"/>
   <labl>Reason for working outside field of highest degree: suitable job not available</labl>
   <txt><![CDATA[NROCNA indicates whether or not the fact that no suitable job available was one reason for working outside field of the respondent's highest degree. Other variables from this survey question include NRCHG, NRCON, NRFAM, NRLOC, NRPAY and NROT.]]></txt>
   <catgry>
@@ -8654,7 +8674,7 @@ Users should note that the universe described by the original documentation does
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="NROT" dcml="0" files="ExtractData" intrvl="discrete" name="NROT">
-  <location EndPos="687" StartPos="686" width="2"/>
+  <location EndPos="689" StartPos="688" width="2"/>
   <labl>Reason for working outside field of highest degree: Other</labl>
   <txt><![CDATA[NROT indicates whether or not other reason was one reason for working outside field of the respondent's highest degree. Other variables from this survey question include NRCHG, NRCON, NRFAM, NRLOC, NRPAY and NROCNA.]]></txt>
   <catgry>
@@ -8673,7 +8693,7 @@ Users should note that the universe described by the original documentation does
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="NRPAY" dcml="0" files="ExtractData" intrvl="discrete" name="NRPAY">
-  <location EndPos="689" StartPos="688" width="2"/>
+  <location EndPos="691" StartPos="690" width="2"/>
   <labl>Reason for working outside field of highest degree: pay/promotion</labl>
   <txt><![CDATA[NRPAY indicates whether or not pay or promotion was one reason for working outside field of the respondent's highest degree. Other variables from this survey question include NRCHG, NRCON, NRFAM, NRLOC, NROCNA and NROT.]]></txt>
   <catgry>
@@ -8692,7 +8712,7 @@ Users should note that the universe described by the original documentation does
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="JOBSATIS" dcml="0" files="ExtractData" intrvl="discrete" name="JOBSATIS">
-  <location EndPos="691" StartPos="690" width="2"/>
+  <location EndPos="693" StartPos="692" width="2"/>
   <labl>Job satisfaction</labl>
   <txt><![CDATA[JOBSATIS reports how satisfied the respondent is with his/her current job.]]></txt>
   <catgry>
@@ -8719,7 +8739,7 @@ Users should note that the universe described by the original documentation does
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="SATADV" dcml="0" files="ExtractData" intrvl="discrete" name="SATADV">
-  <location EndPos="693" StartPos="692" width="2"/>
+  <location EndPos="695" StartPos="694" width="2"/>
   <labl>Satisfaction principal job's opportunities for advancement</labl>
   <txt><![CDATA[SATADV indicates whether or not the respondent is satisfied with his/her principal job's advancement opportunities.  SATADV is part of a series of questions that measures the respondent's satisfaction with certain aspects of his/her principal job.  The other variables include SATBEN, SATCHAL, SATIND, SATLOC, SATRESP, SATSAL, SATSEC, and SATSOC.]]></txt>
   <catgry>
@@ -8746,7 +8766,7 @@ Users should note that the universe described by the original documentation does
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="SATBEN" dcml="0" files="ExtractData" intrvl="discrete" name="SATBEN">
-  <location EndPos="695" StartPos="694" width="2"/>
+  <location EndPos="697" StartPos="696" width="2"/>
   <labl>Satisfaction principal job benefits</labl>
   <txt><![CDATA[SATBEN indicates whether or not the respondent is satisfied with his/her principal job's benefits.  SATBEN is part of a series of questions that measures the respondent's satisfaction with certain aspects of his/her principal job.  The other variables include SATADV, SATCHAL, SATIND, SATLOC, SATRESP, SATSAL, SATSEC, and SATSOC.]]></txt>
   <catgry>
@@ -8773,7 +8793,7 @@ Users should note that the universe described by the original documentation does
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="SATCHAL" dcml="0" files="ExtractData" intrvl="discrete" name="SATCHAL">
-  <location EndPos="697" StartPos="696" width="2"/>
+  <location EndPos="699" StartPos="698" width="2"/>
   <labl>Satisfaction principal job's intellectual challenge</labl>
   <txt><![CDATA[SATCHAL indicates whether or not the respondent is satisfied with his/her principal job's intellectual challenge.  SATCHAL is part of a series of questions that measures the respondent's satisfaction with certain aspects of his/her principal job.  The other variables include SATADV, SATBEN, SATIND, SATLOC, SATRESP, SATSAL, SATSEC, and SATSOC.]]></txt>
   <catgry>
@@ -8800,7 +8820,7 @@ Users should note that the universe described by the original documentation does
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="SATIND" dcml="0" files="ExtractData" intrvl="discrete" name="SATIND">
-  <location EndPos="699" StartPos="698" width="2"/>
+  <location EndPos="701" StartPos="700" width="2"/>
   <labl>Satisfaction principal job's degree of independence</labl>
   <txt><![CDATA[SATIND indicates whether or not the respondent is satisfied with his/her principal job's degree of independence.  SATIND is part of a series of questions that measures the respondent's satisfaction with certain aspects of his/her principal job.  The other variables include SATADV, SATBEN, SATCHAL, SATLOC, SATRESP, SATSAL, SATSEC, and SATSOC.]]></txt>
   <catgry>
@@ -8827,7 +8847,7 @@ Users should note that the universe described by the original documentation does
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="SATLOC" dcml="0" files="ExtractData" intrvl="discrete" name="SATLOC">
-  <location EndPos="701" StartPos="700" width="2"/>
+  <location EndPos="703" StartPos="702" width="2"/>
   <labl>Satisfaction principal job's job location</labl>
   <txt><![CDATA[SATLOC indicates whether or not the respondent is satisfied with his/her principal job's location.  SATLOC is part of a series of questions that measures the respondent's satisfaction with certain aspects of his/her principal job.  The other variables include SATADV, SATBEN, SATCHAL, SATIND, SATRESP, SATSAL, SATSEC, and SATSOC.]]></txt>
   <catgry>
@@ -8854,7 +8874,7 @@ Users should note that the universe described by the original documentation does
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="SATRESP" dcml="0" files="ExtractData" intrvl="discrete" name="SATRESP">
-  <location EndPos="703" StartPos="702" width="2"/>
+  <location EndPos="705" StartPos="704" width="2"/>
   <labl>Satisfaction principal job's level of responsibility</labl>
   <txt><![CDATA[SATRESP indicates whether or not the respondent is satisfied with his/her principal job's level of responsibility.  SATRESP is part of a series of questions that measures the respondent's satisfaction with certain aspects of his/her principal job.  The other variables include SATADV, SATBEN, SATCHAL, SATIND, SATLOC, SATSAL, SATSEC, and SATSOC.]]></txt>
   <catgry>
@@ -8881,7 +8901,7 @@ Users should note that the universe described by the original documentation does
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="SATSAL" dcml="0" files="ExtractData" intrvl="discrete" name="SATSAL">
-  <location EndPos="705" StartPos="704" width="2"/>
+  <location EndPos="707" StartPos="706" width="2"/>
   <labl>Satisfaction principal job salary</labl>
   <txt><![CDATA[SATSAL indicates whether or not the respondent is satisfied with his/her principal job's salary.  SATSAL is part of a series of questions that measures the respondent's satisfaction with certain aspects of his/her principal job.  The other variables include SATADV, SATBEN, SATCHAL, SATIND, SATLOC, SATRESP, SATSEC, and SATSOC.]]></txt>
   <catgry>
@@ -8908,7 +8928,7 @@ Users should note that the universe described by the original documentation does
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="SATSEC" dcml="0" files="ExtractData" intrvl="discrete" name="SATSEC">
-  <location EndPos="707" StartPos="706" width="2"/>
+  <location EndPos="709" StartPos="708" width="2"/>
   <labl>Satisfaction principal job's job security</labl>
   <txt><![CDATA[SATSOC indicates whether or not the respondent is satisfied with his/her principal job's contribution to society.  SATSOC is part of a series of questions that measures the respondent's satisfaction with certain aspects of his/her principal job.  The other variables include SATADV, SATBEN, SATCHAL, SATIND, SATLOC, SATRESP, SATSAL, and SATSEC.]]></txt>
   <catgry>
@@ -8935,7 +8955,7 @@ Users should note that the universe described by the original documentation does
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="SATSOC" dcml="0" files="ExtractData" intrvl="discrete" name="SATSOC">
-  <location EndPos="709" StartPos="708" width="2"/>
+  <location EndPos="711" StartPos="710" width="2"/>
   <labl>Satisfaction principal job's contribution to society</labl>
   <txt><![CDATA[SATSOC indicates whether or not the respondent is satisfied with the contribution to society of his/her principal job.  SATSOC is part of a series of questions that measures the respondent's satisfaction with certain aspects of his/her principal job.  The other variables include SATADV, SATBEN, SATCHAL, SATIND, SATLOC, SATRESP, SATSAL, and SATSEC.]]></txt>
   <catgry>
@@ -8962,7 +8982,7 @@ Users should note that the universe described by the original documentation does
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="WKTRNI" dcml="0" files="ExtractData" intrvl="discrete" name="WKTRNI">
-  <location EndPos="711" StartPos="710" width="2"/>
+  <location EndPos="713" StartPos="712" width="2"/>
   <labl>Attended work-related training</labl>
   <txt><![CDATA[WKTRNI indicates whether or not the respondent had attended a work-related training, workshop, or seminar within the last twelve months, not including college coursework towards a degree program.]]></txt>
   <catgry>
@@ -8981,7 +9001,7 @@ Users should note that the universe described by the original documentation does
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="WTREASN" dcml="0" files="ExtractData" intrvl="discrete" name="WTREASN">
-  <location EndPos="713" StartPos="712" width="2"/>
+  <location EndPos="715" StartPos="714" width="2"/>
   <labl>Most important reason for taking work-related training</labl>
   <txt><![CDATA[If a respondent had attended a work-related workshop, seminar, or training, WTREASN reports the respondent's most important reason for attending the training.]]></txt>
   <catgry>
@@ -9020,7 +9040,7 @@ Users should note that the universe described by the original documentation does
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="WTRADV" dcml="0" files="ExtractData" intrvl="discrete" name="WTRADV">
-  <location EndPos="715" StartPos="714" width="2"/>
+  <location EndPos="717" StartPos="716" width="2"/>
   <labl>Reason for attending training: increase advancement opportunities</labl>
   <txt><![CDATA[If a respondent had attended a work-related workshop, seminar, or training, WTRADV indicates whether or not the respondent's reason for attending the training was to increase advancement opportunities. Other variables related to the reason for attending a training include WTRCHOC, WTREM, WTRLIC, WTRNEW, WTROPPS, WTROT, WTRPERS, and WTRSKL.]]></txt>
   <catgry>
@@ -9043,7 +9063,7 @@ Users should note that the universe described by the original documentation does
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="WTRCHG" dcml="0" files="ExtractData" intrvl="discrete" name="WTRCHG">
-  <location EndPos="717" StartPos="716" width="2"/>
+  <location EndPos="719" StartPos="718" width="2"/>
   <labl>Reason for attending training: facilitate occupation change</labl>
   <txt><![CDATA[If a respondent had attended a work-related workshop, seminar, or training, WTRCHG indicates whether or not the respondent's reason for attending the training was to facilitate an occupation change. Other variables related to the reason for attending a training include WTRADV, WTRCHOC, WTREM, WTRLIC, WTRNEW, WTROPPS, WTROT, WTRPERS, and WTRSKL.]]></txt>
   <catgry>
@@ -9066,7 +9086,7 @@ Users should note that the universe described by the original documentation does
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="WTRCHOC" dcml="0" files="ExtractData" intrvl="discrete" name="WTRCHOC">
-  <location EndPos="719" StartPos="718" width="2"/>
+  <location EndPos="721" StartPos="720" width="2"/>
   <labl>Reason for attending training: facilitate occupation change to different field</labl>
   <txt><![CDATA[If a respondent had attended a work-related workshop, seminar, or training, WTRCHOC indicates whether or not the respondent's reason for attending the training was to facilitate an occupation change in a different field. Other variables related to the reason for attending a training include WTRADV, WTREM, WTRLIC, WTRNEW, WTROPPS, WTROT, WTRPERS, and WTRSKL.]]></txt>
   <catgry>
@@ -9089,7 +9109,7 @@ Users should note that the universe described by the original documentation does
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="WTREM" dcml="0" files="ExtractData" intrvl="discrete" name="WTREM">
-  <location EndPos="721" StartPos="720" width="2"/>
+  <location EndPos="723" StartPos="722" width="2"/>
   <labl>Reason for attending training: required/expected by employer</labl>
   <txt><![CDATA[If a respondent had attended a work-related workshop, seminar, or training, WTREM indicates whether or not the respondent attended the training because it was expected or required from an employer. Other variables related to the reason for attending a training include WTRADV, WTRCHG, WTRCHOC, WTRLIC, WTRNEW, WTROPPS, WTROT, WTRPERS, and WTRSKL.]]></txt>
   <catgry>
@@ -9112,7 +9132,7 @@ Users should note that the universe described by the original documentation does
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="WTRLIC" dcml="0" files="ExtractData" intrvl="discrete" name="WTRLIC">
-  <location EndPos="723" StartPos="722" width="2"/>
+  <location EndPos="725" StartPos="724" width="2"/>
   <labl>Reason for attending training: licensure/certification</labl>
   <txt><![CDATA[If a respondent had attended a work-related workshop, seminar, or training, WTRLIC indicates whether or not the respondent attended the training in order to become licensed or certified in a particular skill. Other variables related to the reason for attending a training include WTRADV, WTRCHG, WTRCHOC, WTREM, WTRNEW, WTROPPS, WTROT, WTRPERS, and WTRSKL.]]></txt>
   <catgry>
@@ -9135,7 +9155,7 @@ Users should note that the universe described by the original documentation does
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="WTRNEW" dcml="0" files="ExtractData" intrvl="discrete" name="WTRNEW">
-  <location EndPos="725" StartPos="724" width="2"/>
+  <location EndPos="727" StartPos="726" width="2"/>
   <labl>Reason for attending training: learn skills for recently acquired position</labl>
   <txt><![CDATA[If a respondent had attended a work-related workshop, seminar, or training, WTRNEW indicates whether or not the respondent attended the training in order to gain skills or knowledge for a recently acquired job. Other variables related to the reason for attending a training include WTRADV, WTRCHG, WTRCHOC, WTREM, WTRLIC, WTROPPS, WTROT, WTRPERS, and WTRSKL.]]></txt>
   <catgry>
@@ -9158,7 +9178,7 @@ Users should note that the universe described by the original documentation does
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="WTROPPS" dcml="0" files="ExtractData" intrvl="discrete" name="WTROPPS">
-  <location EndPos="727" StartPos="726" width="2"/>
+  <location EndPos="729" StartPos="728" width="2"/>
   <labl>Reason for attending training: increase advancement opportunities in current occupation</labl>
   <txt><![CDATA[If a respondent had attended a work-related workshop, seminar, or training, WTROPPS indicates whether or not the respondent attended the training in order to increase opportunities for advancement in the respondent's current position. Other variables related to the reason for attending a training include WTRADV, WTRCHG, WTRCHOC, WTREM, WTRLIC, WTRNEW, WTROT, WTRPERS, and WTRSKL.]]></txt>
   <catgry>
@@ -9177,7 +9197,7 @@ Users should note that the universe described by the original documentation does
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="WTROT" dcml="0" files="ExtractData" intrvl="discrete" name="WTROT">
-  <location EndPos="729" StartPos="728" width="2"/>
+  <location EndPos="731" StartPos="730" width="2"/>
   <labl>Reason for attending training: other</labl>
   <txt><![CDATA[If a respondent had attended a work-related workshop, seminar, or training, WTROT indicates whether the respondent had attended the training for a reason other than the options listed in the questionnaire.  Other variables related to the reason for attending a training include WTRADV, WTRCHG, WTRCHOC, WTREM, WTRLIC, WTRNEW, WTROPPS, WTRPERS, and WTRSKL.]]></txt>
   <catgry>
@@ -9196,7 +9216,7 @@ Users should note that the universe described by the original documentation does
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="WTRPERS" dcml="0" files="ExtractData" intrvl="discrete" name="WTRPERS">
-  <location EndPos="731" StartPos="730" width="2"/>
+  <location EndPos="733" StartPos="732" width="2"/>
   <labl>Reason for attending training: leisure/personal interest</labl>
   <txt><![CDATA[If a respondent had attended a work-related workshop, seminar, or training, WTRPERS indicates whether the respondent had attended the training for personal interest or leisure.  Other variables related to the reason for attending a training include WTRADV, WTRCHG, WTRCHOC, WTREM, WTRLIC, WTRNEW, WTROPPS, WTROT, and WTRSKL.]]></txt>
   <catgry>
@@ -9215,7 +9235,7 @@ Users should note that the universe described by the original documentation does
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="WTRSKL" dcml="0" files="ExtractData" intrvl="discrete" name="WTRSKL">
-  <location EndPos="733" StartPos="732" width="2"/>
+  <location EndPos="735" StartPos="734" width="2"/>
   <labl>Reason for attending training: acquire further skills/knowledge</labl>
   <txt><![CDATA[If a respondent had attended a work-related workshop, seminar, or training, WTRSKL indicates whether the respondent had attended the training in order to improve knowledge or skills relevant to the respondent's current occupational field.  Other variables related to the reason for attending a training include WTRADV, WTRCHG, WTRCHOC, WTREM, WTRLIC, WTRNEW, WTROPPS, WTROT, and WTRPERS.]]></txt>
   <catgry>
@@ -9238,7 +9258,7 @@ Users should note that the universe described by the original documentation does
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="WTAPRF" dcml="0" files="ExtractData" intrvl="discrete" name="WTAPRF">
-  <location EndPos="735" StartPos="734" width="2"/>
+  <location EndPos="737" StartPos="736" width="2"/>
   <labl>Area of work-related training: general professional training</labl>
   <txt><![CDATA[If a respondent had attended a work-related training, WTAPRF indicates whether the respondent had attended a general profession training workshop or seminar.  Other variables indicating the type of training a respondent might have taken include WTMGT, WTOT, and WTTECH.]]></txt>
   <catgry>
@@ -9257,7 +9277,7 @@ Users should note that the universe described by the original documentation does
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="WTMGT" dcml="0" files="ExtractData" intrvl="discrete" name="WTMGT">
-  <location EndPos="737" StartPos="736" width="2"/>
+  <location EndPos="739" StartPos="738" width="2"/>
   <labl>Area of work-related training: management training</labl>
   <txt><![CDATA[If a respondent had attended a work-related training, WTMGT indicates whether the respondent had attended a management training workshop or seminar.  Other variables indicating the type of training a respondent might have taken include WTAPRF, WTOT, and WTTECH.]]></txt>
   <catgry>
@@ -9276,7 +9296,7 @@ Users should note that the universe described by the original documentation does
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="WTOT" dcml="0" files="ExtractData" intrvl="discrete" name="WTOT">
-  <location EndPos="739" StartPos="738" width="2"/>
+  <location EndPos="741" StartPos="740" width="2"/>
   <labl>Area of work-related training: other</labl>
   <txt><![CDATA[If a respondent had attended a work-related training, WTOT indicates whether the respondent had attended a training that focused on a different topic than management, general professional, or technical training in the respondent's occupational field (which were the only survey responses).  Other variables indicating the type of training a respondent might have taken include WTAPRF, WTMGT, and WTTECH.]]></txt>
   <catgry>
@@ -9295,7 +9315,7 @@ Users should note that the universe described by the original documentation does
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="WTTECH" dcml="0" files="ExtractData" intrvl="discrete" name="WTTECH">
-  <location EndPos="741" StartPos="740" width="2"/>
+  <location EndPos="743" StartPos="742" width="2"/>
   <labl>Area of work-related training: technical training</labl>
   <txt><![CDATA[If a respondent had attended a work-related training, WTTECH indicates whether the respondent had attended a technical training in the respondent's occupational field.  Other variables indicating the type of training a respondent might have taken include WTAPRF, WTMGT, and WTOT.]]></txt>
   <catgry>
@@ -9314,7 +9334,7 @@ Users should note that the universe described by the original documentation does
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="OCLIC" dcml="0" files="ExtractData" intrvl="discrete" name="OCLIC">
-  <location EndPos="743" StartPos="742" width="2"/>
+  <location EndPos="745" StartPos="744" width="2"/>
   <labl>Licensed/certified in occupation</labl>
   <txt><![CDATA[OCLIC indicates whether or not the respondent was licensed and/or certified in his/her occupation.]]></txt>
   <catgry>
@@ -9337,7 +9357,7 @@ Users should note that the universe described by the original documentation does
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="MGRNAT" dcml="0" files="ExtractData" intrvl="discrete" name="MGRNAT">
-  <location EndPos="745" StartPos="744" width="2"/>
+  <location EndPos="747" StartPos="746" width="2"/>
   <labl>Job required technical expertise: natural sciences</labl>
   <txt><![CDATA[MGRNAT indicates whether or not the respondent's principal job requires technical expertise at least at the bachelor's degree level in engineering, computer science, math, or natural sciences.  The variables MGRSOC and MGROTH indicate expertise requirements in social sciences or other fields, respectively.]]></txt>
   <catgry>
@@ -9360,7 +9380,7 @@ Users should note that the universe described by the original documentation does
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="MGROTH" dcml="0" files="ExtractData" intrvl="discrete" name="MGROTH">
-  <location EndPos="747" StartPos="746" width="2"/>
+  <location EndPos="749" StartPos="748" width="2"/>
   <labl>Job required technical expertise: other</labl>
   <txt><![CDATA[MGROTH indicates whether or not the respondent's principal job requires technical expertise at least at the bachelor's degree level in a field other than the natural or social sciences.  The variables MGRNAT and MGRSOC indicate expertise requirements in natural sciences or social sciences, respectively.]]></txt>
   <catgry>
@@ -9383,7 +9403,7 @@ Users should note that the universe described by the original documentation does
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="MGRSOC" dcml="0" files="ExtractData" intrvl="discrete" name="MGRSOC">
-  <location EndPos="749" StartPos="748" width="2"/>
+  <location EndPos="751" StartPos="750" width="2"/>
   <labl>Job required technical expertise: social sciences</labl>
   <txt><![CDATA[MGRNAT indicates whether or not the respondent's principal job requires technical expertise at least at the bachelor's degree level in social sciences.  The variables MGROTH and MGRNAT indicate expertise requirements in other fields or natural sciences, respectively.]]></txt>
   <catgry>
@@ -9406,7 +9426,7 @@ Users should note that the universe described by the original documentation does
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="SPNAT" dcml="0" files="ExtractData" intrvl="discrete" name="SPNAT">
-  <location EndPos="751" StartPos="750" width="2"/>
+  <location EndPos="753" StartPos="752" width="2"/>
   <labl>Technical expertise required by spouse/partner job: sciences</labl>
   <txt><![CDATA[SPNAT indicates whether or not the job of the respondent's spouse required the spouse to have technical expertise in engineering, computer science, math, or natural sciences at the bachelor degree level or higher.  Related variables include SPOT and SPSOC.]]></txt>
   <catgry>
@@ -9425,7 +9445,7 @@ Users should note that the universe described by the original documentation does
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="SPOT" dcml="0" files="ExtractData" intrvl="discrete" name="SPOT">
-  <location EndPos="753" StartPos="752" width="2"/>
+  <location EndPos="755" StartPos="754" width="2"/>
   <labl>Technical expertise required by spouse/partner job: other</labl>
   <txt><![CDATA[SPOT indicates whether or not the job of the respondent's spouse required the spouse to have technical expertise in a field other than natural or social sciences at the bachelor degree level or higher.  Related variables include SPNAT and SPSOC.]]></txt>
   <catgry>
@@ -9444,7 +9464,7 @@ Users should note that the universe described by the original documentation does
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="SPSOC" dcml="0" files="ExtractData" intrvl="discrete" name="SPSOC">
-  <location EndPos="755" StartPos="754" width="2"/>
+  <location EndPos="757" StartPos="756" width="2"/>
   <labl>Technical expertise required by spouse/partner Job: social sciences</labl>
   <txt><![CDATA[SPSOC indicates whether or not the job of the respondent's spouse required the spouse to have technical expertise in social sciences at the bachelor degree level or higher.  Related variables include SPNAT and SPOT.]]></txt>
   <catgry>
@@ -9463,7 +9483,7 @@ Users should note that the universe described by the original documentation does
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="NOCMLST" dcml="0" files="ExtractData" intrvl="discrete" name="NOCMLST">
-  <location EndPos="757" StartPos="756" width="2"/>
+  <location EndPos="759" StartPos="758" width="2"/>
   <labl>Job code for last job (major group)</labl>
   <txt><![CDATA[NOCMLST categorizes the respondent's last job into seven broad fields. The variable OCLSTPB provides this information with a finer level of detail.]]></txt>
   <catgry>
@@ -9502,7 +9522,7 @@ Users should note that the universe described by the original documentation does
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="OCLSTPB" dcml="0" files="ExtractData" intrvl="discrete" name="OCLSTPB">
-  <location EndPos="763" StartPos="758" width="6"/>
+  <location EndPos="765" StartPos="760" width="6"/>
   <labl>Job code for last job (public use)</labl>
   <txt><![CDATA[OCLSTP gives a detailed occupation code for the respondent's previous occupation.  NOCMLST is an aggregated version of this variable.]]></txt>
   <catgry>
@@ -9605,7 +9625,7 @@ Users should note that the universe described by the original documentation does
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="CHCHG" dcml="0" files="ExtractData" intrvl="discrete" name="CHCHG">
-  <location EndPos="765" StartPos="764" width="2"/>
+  <location EndPos="767" StartPos="766" width="2"/>
   <labl>Reason for changing employer or job: change in career/professional interests</labl>
   <txt><![CDATA[If the respondent had changed employers or position within two years of the survey (specifically between October of the survey year and October two years prior), the variable CHCHG reports whether or not a change in professional or career interests was a reason for that change.  Other reasons for changing employers or job include CHCON, CHFAM, CHLAY, CHLOC, CHOT, CHPAY, CHRET, and CHSCH.]]></txt>
   <catgry>
@@ -9628,7 +9648,7 @@ Users should note that the universe described by the original documentation does
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="CHCON" dcml="0" files="ExtractData" intrvl="discrete" name="CHCON">
-  <location EndPos="767" StartPos="766" width="2"/>
+  <location EndPos="769" StartPos="768" width="2"/>
   <labl>Reason for changing employer or job: working conditions</labl>
   <txt><![CDATA[If the respondent had changed employers or position within two years of the survey (specifically between October of the survey year and October two years prior), the variable CHCON reports whether or not working conditions were a reason for that change.  Other reasons for changing employers or job include CHCHG, CHFAM, CHLAY, CHLOC, CHOT, CHPAY, CHRET, and CHSCH.]]></txt>
   <catgry>
@@ -9651,7 +9671,7 @@ Users should note that the universe described by the original documentation does
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="CHFAM" dcml="0" files="ExtractData" intrvl="discrete" name="CHFAM">
-  <location EndPos="769" StartPos="768" width="2"/>
+  <location EndPos="771" StartPos="770" width="2"/>
   <labl>Reason for changing employer or job: family-related reasons</labl>
   <txt><![CDATA[If the respondent had changed employers or position within two years of the survey (specifically between October of the survey year and October two years prior), the variable CHFAM reports whether family-related reasons were among the reasons for that change.  Other reasons for changing employers or job include CHCHG, CHCON, CHLAY, CHLOC, CHOT, CHPAY, CHRET, and CHSCH.]]></txt>
   <catgry>
@@ -9674,7 +9694,7 @@ Users should note that the universe described by the original documentation does
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="CHLAY" dcml="0" files="ExtractData" intrvl="discrete" name="CHLAY">
-  <location EndPos="771" StartPos="770" width="2"/>
+  <location EndPos="773" StartPos="772" width="2"/>
   <labl>Reason for changing employer or job: laid off/job terminated</labl>
   <txt><![CDATA[If the respondent had changed employers or position within two years of the survey (specifically between October of the survey year and October two years prior), the variable CHLAY reports whether being laid off or having his/her job terminated was a reason for that change.  Other reasons for changing employers or job include CHCHG, CHCON, CHFAM, CHLOC, CHOT, CHPAY, CHRET, and CHSCH.]]></txt>
   <catgry>
@@ -9697,7 +9717,7 @@ Users should note that the universe described by the original documentation does
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="CHLOC" dcml="0" files="ExtractData" intrvl="discrete" name="CHLOC">
-  <location EndPos="773" StartPos="772" width="2"/>
+  <location EndPos="775" StartPos="774" width="2"/>
   <labl>Reason for changing employer or job: job location</labl>
   <txt><![CDATA[If the respondent had changed employers or position within two years of the survey (specifically between October of the survey year and October two years prior), the variable CHLOC reports whether or not the job's location was a reason for that change.  Other reasons for changing employers or job include CHCHG, CHCON, CHFAM, CHLAY, CHOT, CHPAY, CHRET, and CHSCH.]]></txt>
   <catgry>
@@ -9720,7 +9740,7 @@ Users should note that the universe described by the original documentation does
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="CHOT" dcml="0" files="ExtractData" intrvl="discrete" name="CHOT">
-  <location EndPos="775" StartPos="774" width="2"/>
+  <location EndPos="777" StartPos="776" width="2"/>
   <labl>Reason for changing employer or job: other</labl>
   <txt><![CDATA[If the respondent had changed employers or position within two years of the survey (specifically between October of the survey year and October two years prior), the variable CHOT indicates that there was a reason for the change in employment other than the reasons listed as options on the questionnaire.  Other reasons for changing employers or job include CHCHG, CHCON, CHFAM, CHLAY, CHLOC, CHPAY, CHRET, and CHSCH.]]></txt>
   <catgry>
@@ -9743,7 +9763,7 @@ Users should note that the universe described by the original documentation does
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="CHPAY" dcml="0" files="ExtractData" intrvl="discrete" name="CHPAY">
-  <location EndPos="777" StartPos="776" width="2"/>
+  <location EndPos="779" StartPos="778" width="2"/>
   <labl>Reason for changing employer or job: pay, promotion</labl>
   <txt><![CDATA[If the respondent had changed employers or position within two years of the survey (specifically between October of the survey year and October two years prior), the variable CHPAY reports whether or not pay or promotion opportunities were a reason for that change.  Other reasons for changing employers or job include CHCHG, CHCON, CHFAM, CHLAY, CHLOC, CHOT, CHRET, and CHSCH.]]></txt>
   <catgry>
@@ -9766,7 +9786,7 @@ Users should note that the universe described by the original documentation does
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="CHRET" dcml="0" files="ExtractData" intrvl="discrete" name="CHRET">
-  <location EndPos="779" StartPos="778" width="2"/>
+  <location EndPos="781" StartPos="780" width="2"/>
   <labl>Reason for changing employer or job: retired</labl>
   <txt><![CDATA[If the respondent had changed employers or position within two years of the survey (specifically between October of the survey year and October two years prior), the variable CHRET reports whether or not the respondent's retirement was a reason for that change.  Other reasons for changing employers or job include CHCHG, CHCON, CHFAM, CHLAY, CHLOC, CHOT, CHPAY, and CHSCH.]]></txt>
   <catgry>
@@ -9789,7 +9809,7 @@ Users should note that the universe described by the original documentation does
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="CHSCH" dcml="0" files="ExtractData" intrvl="discrete" name="CHSCH">
-  <location EndPos="781" StartPos="780" width="2"/>
+  <location EndPos="783" StartPos="782" width="2"/>
   <labl>Reason for changing employer or job: school-related reasons</labl>
   <txt><![CDATA[If the respondent had changed employers or position within two years of the survey (specifically between October of the survey year and October two years prior), the variable CHSCH reports whether or not school-related reasons were a reason for that change.  Other reasons for changing employers or job include CHCHG, CHCON, CHFAM, CHLAY, CHLOC, CHOT, CHPAY, and CHRET.]]></txt>
   <catgry>
@@ -9812,7 +9832,7 @@ Users should note that the universe described by the original documentation does
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="BUYOUT" dcml="0" files="ExtractData" intrvl="discrete" name="BUYOUT">
-  <location EndPos="783" StartPos="782" width="2"/>
+  <location EndPos="785" StartPos="784" width="2"/>
   <labl>Offered buy-out</labl>
   <txt><![CDATA[BUYOUT reports whether or not the respondent had ever been offered a buyout, or early retirement in exchange for a cash settlement, by an employer.  If yes, the respondent also answered if they accepted the offer or not.]]></txt>
   <catgry>
@@ -9835,7 +9855,7 @@ Users should note that the universe described by the original documentation does
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="OCOMG" dcml="0" files="ExtractData" intrvl="discrete" name="OCOMG">
-  <location EndPos="785" StartPos="784" width="2"/>
+  <location EndPos="787" StartPos="786" width="2"/>
   <labl>Job code for principal job in 1988 (major group)</labl>
   <txt><![CDATA[For respondents who were working in April 1988 (5 years prior to the survey), OCOMG reports a broad occupation code for the principal job of the respondent at that time.  OCO is a more detailed version of this variable.]]></txt>
   <catgry>
@@ -9870,7 +9890,7 @@ Users should note that the universe described by the original documentation does
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="OCO" dcml="0" files="ExtractData" intrvl="discrete" name="OCO">
-  <location EndPos="791" StartPos="786" width="6"/>
+  <location EndPos="793" StartPos="788" width="6"/>
   <labl>Job code for principal job in 1988</labl>
   <txt><![CDATA[For respondents who were working in April 1988 (5 years prior to the survey), OCO reports a detailed occupation code for the principal job of the respondent at that time.   OCOMG are aggregated versions of this variable into major occupation groups.]]></txt>
   <catgry>
@@ -9973,7 +9993,7 @@ Users should note that the universe described by the original documentation does
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="ICOLLAB" dcml="0" files="ExtractData" intrvl="discrete" name="ICOLLAB">
-  <location EndPos="793" StartPos="792" width="2"/>
+  <location EndPos="795" StartPos="794" width="2"/>
   <labl>International collaboration indicator</labl>
   <txt><![CDATA[ICOLLAB indicates whether or not a respondent collaborated with other researchers outside of the United States.]]></txt>
   <catgry>
@@ -9992,7 +10012,7 @@ Users should note that the universe described by the original documentation does
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="ICCOMM" dcml="0" files="ExtractData" intrvl="discrete" name="ICCOMM">
-  <location EndPos="795" StartPos="794" width="2"/>
+  <location EndPos="797" StartPos="796" width="2"/>
   <labl>International collaboration activity: communicate by phone/email</labl>
   <txt><![CDATA[ICCOMM indicates whether or not a respondent collaborated with other researchers outside of the United States using phone and/or email.]]></txt>
   <catgry>
@@ -10011,7 +10031,7 @@ Users should note that the universe described by the original documentation does
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="ICTRLA" dcml="0" files="ExtractData" intrvl="discrete" name="ICTRLA">
-  <location EndPos="797" StartPos="796" width="2"/>
+  <location EndPos="799" StartPos="798" width="2"/>
   <labl>International collaboration activity: travel abroad for collaboration</labl>
   <txt><![CDATA[ICTRLA indicates whether or not a respondent collaborated with other researchers outside of the United States and the respondent traveled abroad for the collaboration.]]></txt>
   <catgry>
@@ -10030,7 +10050,7 @@ Users should note that the universe described by the original documentation does
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="ICTRLH" dcml="0" files="ExtractData" intrvl="discrete" name="ICTRLH">
-  <location EndPos="799" StartPos="798" width="2"/>
+  <location EndPos="801" StartPos="800" width="2"/>
   <labl>International collaboration activity: foreign collaborators travel to US</labl>
   <txt><![CDATA[ICTRLH indicates whether or not a respondent collaborated with other researchers outside of the United States by the international collaborators traveling to the US.]]></txt>
   <catgry>
@@ -10049,7 +10069,7 @@ Users should note that the universe described by the original documentation does
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="ICWBVT" dcml="0" files="ExtractData" intrvl="discrete" name="ICWBVT">
-  <location EndPos="801" StartPos="800" width="2"/>
+  <location EndPos="803" StartPos="802" width="2"/>
   <labl>International collaboration activity: use web-based/virtual technology</labl>
   <txt><![CDATA[ICWBVT indicates whether or not a respondent collaborated with other researchers outside of the United States using a web-based or virtual technology.]]></txt>
   <catgry>
@@ -10068,7 +10088,7 @@ Users should note that the universe described by the original documentation does
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="NEWRESP" dcml="0" files="ExtractData" intrvl="discrete" name="NEWRESP">
-  <location EndPos="803" StartPos="802" width="2"/>
+  <location EndPos="805" StartPos="804" width="2"/>
   <labl>New job offered what level of: responsibility</labl>
   <txt><![CDATA[For respondents who recently found new job, the variable NEWRESP compares the level of responsibility given in his/her new job to the level of responsibility in his/her previous job. Related variables include NEWSAL and NEWSKILL.]]></txt>
   <catgry>
@@ -10091,7 +10111,7 @@ Users should note that the universe described by the original documentation does
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="NEWSAL" dcml="0" files="ExtractData" intrvl="discrete" name="NEWSAL">
-  <location EndPos="805" StartPos="804" width="2"/>
+  <location EndPos="807" StartPos="806" width="2"/>
   <labl>New job offered what level of: salary</labl>
   <txt><![CDATA[For respondents who recently found new job, the variable NEWRESP compares the salary in his/her new job to the salary in his/her previous job. Related variables include NEWRESP and NEWSKILL.]]></txt>
   <catgry>
@@ -10114,7 +10134,7 @@ Users should note that the universe described by the original documentation does
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="NEWSKILL" dcml="0" files="ExtractData" intrvl="discrete" name="NEWSKILL">
-  <location EndPos="807" StartPos="806" width="2"/>
+  <location EndPos="809" StartPos="808" width="2"/>
   <labl>New job offered what level of: knowledge/skill utilization</labl>
   <txt><![CDATA[For respondents who recently found new job, the variable NEWRESP compares the level of knowledge or skill utilization required in his/her new job to the knowledge or skill utilization required in his/her previous job. Related variables include NEWRESP and NEWSAL.]]></txt>
   <catgry>
@@ -10137,7 +10157,7 @@ Users should note that the universe described by the original documentation does
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="NWFAM" dcml="0" files="ExtractData" intrvl="discrete" name="NWFAM">
-  <location EndPos="809" StartPos="808" width="2"/>
+  <location EndPos="811" StartPos="810" width="2"/>
   <labl>Reasons for not working: family responsibilities</labl>
   <txt><![CDATA[NWFAM indicates whether or not the respondent's family responsibilities were one reason for the respondent not working during the reference week. Other variables from this survey question include NWILL, NWLAY, NWNOND, NWOCNA, NWOTP, NWRET, NWSTU and NWOT.]]></txt>
   <catgry>
@@ -10156,7 +10176,7 @@ Users should note that the universe described by the original documentation does
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="NWILL" dcml="0" files="ExtractData" intrvl="discrete" name="NWILL">
-  <location EndPos="811" StartPos="810" width="2"/>
+  <location EndPos="813" StartPos="812" width="2"/>
   <labl>Reasons for not working: illness/disability</labl>
   <txt><![CDATA[NWILL indicates whether or not illness or disability was one reason for the respondent not working during the reference week. Other variables from this survey question include NWFAM, NWLAY, NWNOND, NWOCNA, NWOTP, NWRET, NWSTU and NWOT.]]></txt>
   <catgry>
@@ -10175,7 +10195,7 @@ Users should note that the universe described by the original documentation does
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="NWLAY" dcml="0" files="ExtractData" intrvl="discrete" name="NWLAY">
-  <location EndPos="813" StartPos="812" width="2"/>
+  <location EndPos="815" StartPos="814" width="2"/>
   <labl>Reasons for not working: layoff</labl>
   <txt><![CDATA[NWLAY indicates whether or not being laid off from a previous job was one reason for not working during the reference week. Other variables from this survey question include NWFAM, NWILL, NWNOND, NWOCNA, NWOTP, NWRET, NWSTU and NWOT.]]></txt>
   <catgry>
@@ -10194,7 +10214,7 @@ Users should note that the universe described by the original documentation does
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="NWNOND" dcml="0" files="ExtractData" intrvl="discrete" name="NWNOND">
-  <location EndPos="815" StartPos="814" width="2"/>
+  <location EndPos="817" StartPos="816" width="2"/>
   <labl>Reasons for not working: did not need/want to work</labl>
   <txt><![CDATA[NWNOND indicates whether or not that the respondent was not working during the reference week because he/she did not need or want to work. Other variables from this survey question include NWFAM, NWILL, NWLAY, NWOCNA, NWOTP, NWRET, NWSTU and NWOT.]]></txt>
   <catgry>
@@ -10213,7 +10233,7 @@ Users should note that the universe described by the original documentation does
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="NWOCNA" dcml="0" files="ExtractData" intrvl="discrete" name="NWOCNA">
-  <location EndPos="817" StartPos="816" width="2"/>
+  <location EndPos="819" StartPos="818" width="2"/>
   <labl>Reasons for not working: suitable job not available</labl>
   <txt><![CDATA[NWOCNA indicates whether or not the respondent was not working during the reference week because a suitable job not available. Other variables from this survey question include NWFAM, NWILL, NWLAY, NWNOND, NWOTP, NWRET, NWSTU and NWOT.]]></txt>
   <catgry>
@@ -10232,7 +10252,7 @@ Users should note that the universe described by the original documentation does
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="NWOT" dcml="0" files="ExtractData" intrvl="discrete" name="NWOT">
-  <location EndPos="819" StartPos="818" width="2"/>
+  <location EndPos="821" StartPos="820" width="2"/>
   <labl>Reasons for not working: other</labl>
   <txt><![CDATA[NWOT indicates whether or not the respondent was not working during the reference week for a reason other than the ones listed in the questionnaire. From 2003-2010 (and S-NSCG 2013), three response options (Illness, Retired and Other) were combined in the SESTAT version of the surveys, see NWOTP.  
 
@@ -10253,7 +10273,7 @@ Other variables from this survey question include NWFAM, NWILL, NWLAY, NWNOND, N
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="NWOTP" dcml="0" files="ExtractData" intrvl="discrete" name="NWOTP">
-  <location EndPos="821" StartPos="820" width="2"/>
+  <location EndPos="823" StartPos="822" width="2"/>
   <labl>Reasons for not working: illness, retired or other (combined)</labl>
   <txt><![CDATA[NWOTP indicates whether or not illness, retirement or some other reason were causes for not working. This variable combines three response options into one variable (Illness, Retired and Other). In years prior to 2003 (and the 2013 S-SDR), these response options are not combined, see NWILL, NWOT and NWRET.  
 
@@ -10274,7 +10294,7 @@ Other variables from this survey question include NWFAM, , NWLAY, NWNOND, , NWOC
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="NWRET" dcml="0" files="ExtractData" intrvl="discrete" name="NWRET">
-  <location EndPos="823" StartPos="822" width="2"/>
+  <location EndPos="825" StartPos="824" width="2"/>
   <labl>Reasons for not working: retired</labl>
   <txt><![CDATA[NWRET indicates whether or not that the respondent being retired was one reason for not working during the reference week. Other variables from this survey question include NWFAM, NWILL, NWLAY, NWNOND, NWOTP, NWOCNA, NWSTU and NWOT.]]></txt>
   <catgry>
@@ -10293,7 +10313,7 @@ Other variables from this survey question include NWFAM, , NWLAY, NWNOND, , NWOC
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="NWSTU" dcml="0" files="ExtractData" intrvl="discrete" name="NWSTU">
-  <location EndPos="825" StartPos="824" width="2"/>
+  <location EndPos="827" StartPos="826" width="2"/>
   <labl>Reasons for not working: student</labl>
   <txt><![CDATA[NWSTU indicates whether or not that the respondent was student was one reason for not working during the reference week. Other variables from this survey question include NWFAM, NWILL, NWLAY, NWNOND, NWRET, NWOCNA, NWOTP and NWOT.]]></txt>
   <catgry>
@@ -10312,7 +10332,7 @@ Other variables from this survey question include NWFAM, , NWLAY, NWNOND, , NWOC
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="HHLOSE" dcml="0" files="ExtractData" intrvl="discrete" name="HHLOSE">
-  <location EndPos="827" StartPos="826" width="2"/>
+  <location EndPos="829" StartPos="828" width="2"/>
   <labl>Concerned about someone else in household losing job</labl>
   <txt><![CDATA[HHLOSE indicates the extent to which the respondent was concerned about another adult in the household losing his/her job.  The question explicitly excludes the respondent's concern about his/her own job security.]]></txt>
   <catgry>
@@ -10335,7 +10355,7 @@ Other variables from this survey question include NWFAM, , NWLAY, NWNOND, , NWOC
   <varFormat schema="other" type="numeric"/>
 </var>
 <var ID="HHLOSENO" dcml="0" files="ExtractData" intrvl="discrete" name="HHLOSENO">
-  <location EndPos="829" StartPos="828" width="2"/>
+  <location EndPos="831" StartPos="830" width="2"/>
   <labl>No other working adult in household</labl>
   <txt><![CDATA[HHLOSENO indicates whether or not another adult in the respondent's household was working at the time of the survey.  Users should note that the response "No" means that another adult was working in the household, and "Yes" means that no other adult in the household was working during the reference period.]]></txt>
   <catgry>
